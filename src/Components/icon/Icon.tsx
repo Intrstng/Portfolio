@@ -2,7 +2,7 @@ import React from 'react';
 import iconsSprite from '../../assets/images/icons-sprite.svg';
 
 type IconPropsType = {
-    iconId: 'logo' | 'instagram' | 'instagramActive' | 'telegram' | 'telegramActive' | 'twitter' | 'twitterActive' | 'facebook' | 'facebookActive'
+    iconId: 'logo' | 'instagram' | 'instagramActive' | 'telegram' | 'telegramActive' | 'twitter' | 'twitterActive' | 'facebook' | 'facebookActive' | 'arrows' | 'clock'
     width?: string
     height?: string
     viewBox?: string
