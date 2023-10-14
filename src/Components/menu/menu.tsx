@@ -23,5 +23,4 @@ const StyledMenu = styled.nav `
     //height: 1.63rem;
     gap: 2.5rem;
   }
-
 `
