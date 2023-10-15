@@ -18,6 +18,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header `
+  margin: 0 auto;
   display: flex;
   width: 94.5rem;
   padding: 1.75rem 6.9375rem;
