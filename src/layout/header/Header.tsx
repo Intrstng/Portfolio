@@ -12,7 +12,7 @@ export const Header = () => {
             {/*</div>*/}
             <Logo/>
             <Menu/>
-            <Button/>
+            <Button href={'#'} content={'Contact'}/>
         </StyledHeader>
     )
 };

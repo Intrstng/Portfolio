@@ -1,7 +1,12 @@
 import React from 'react';
 
-export const Button = () => {
+type ButtonPropsType = {
+    content?: string
+    href: string
+}
+
+export const Button = (props: ButtonPropsType) => {
     return (
-        <a href="#">Contact</a>
+        <a href={props.href || '#'}>{props.content || 'Link'}</a>
     );
 };

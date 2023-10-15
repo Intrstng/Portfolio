@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import LogoImg from '../../assets/images/discover.png';
-import {FlexWrapper} from "../../Components/FlexWrapper";
+import LogoImg from '../../../assets/images/discover.png';
+import {FlexWrapper} from "../../../Components/FlexWrapper";
 
 export const Main = () => {
   return (
     <StyledMain justify={'space-between'} align ={'center'}>
-    <FlexWrapper>
         <StyledDescription direction={'column'}>
           <StyledSubtitle>Discover and
             Collect The Best NFTs <span>Digital Art.</span>
@@ -48,10 +47,10 @@ export const Main = () => {
 
                                     <FlexWrapper direction={'column'}>
         <LogoImage src={LogoImg} alt="hero"/>
-           <img src="" alt="logo"/>
+           <img src="src/layout/sections/Main" alt="logo"/>
 
 
-
+              <div></div>
               <StyledBidCard direction={'column'} align={'center'}>
                 <StyledBidBlock justify={'space-between'} align={'flex-start'}>
                 <div>
@@ -71,7 +70,6 @@ export const Main = () => {
                   <StyledOutlinedBtn href="#">Place A Bid</StyledOutlinedBtn>
               </StyledBidCard>
       </FlexWrapper>
-    </FlexWrapper>
     </StyledMain>
   );
 };
@@ -111,7 +109,7 @@ const StyledText = styled.p `
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: * 1.6rem;
+  line-height: 1.6rem;
 `
 
 const StyledActiveBtn = styled.a `
@@ -141,7 +139,7 @@ const StyledBtn = styled.a `
   text-decoration: none;
   `
 
-const StyledCounter = styled.h2 `
+const StyledCounter = styled.h3 `
   color: #D3F85A;
   font-family: Canela;
   font-size: 3rem;
@@ -197,7 +195,7 @@ const StyledBidBlock = styled(FlexWrapper) `
 
 
 
-const StyledBidCardSubtitle = styled.h3 `
+const StyledBidCardSubtitle = styled.h4 `
   margin-bottom: 0.5rem;
   color: #D3F85A;
   font-family: Inter;
@@ -216,7 +214,7 @@ const StyledBidCardText = styled.h5 `
   line-height: 1.2rem;
 `
 
-const StyledOutlinedBtn = styled.a `
+export const StyledOutlinedBtn = styled.a `
   //height: 3.25rem;
   padding: 0.75rem 2.5rem;
   border-radius: 0.5rem;
