@@ -13,7 +13,8 @@ import iconsSprite from "../../../assets/images/icons-sprite.svg";
 export const Amazing = () => {
   return (
     <StyledAmazing>
-      <AmazingTitleBlock justify={'space-between'} align={'flex-end'}>
+      <AmazingTitleBlock justify={'space-between'}
+                         align={'flex-end'}>
           <SectionTitle>
               <span>Amazing</span> and Super
               Unique Art of This <span>Week</span>

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Icon} from "../icon/Icon";
 import iconsSprite from '../../assets/images/icons-sprite.svg';
+import ownersSprite from '../../assets/images/owners-sprite.svg';
+import ownerImg_1 from '../../assets/images/owner_1.png';
 
 export  const Logo = () => {
     return (
@@ -14,3 +16,19 @@ export  const Logo = () => {
         </a>
     );
 };
+
+
+type AvatarPropsType = {
+  avatarSrc: string
+  alternativeSrc: string
+}
+
+export const Avatar = (props: AvatarPropsType) => {
+  return (
+    <object type="image/svg+xml" data={props.avatarSrc} width="48" height="48">
+      <img src={props.alternativeSrc} width="48" height="48" alt="avatar png"/>
+    </object>
+  );
+}
+
+

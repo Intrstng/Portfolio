@@ -1,7 +1,24 @@
 import React from 'react';
 
 type IconPropsType = {
-    iconId: 'logo' | 'instagram' | 'instagramActive' | 'telegram' | 'telegramActive' | 'twitter' | 'twitterActive' | 'facebook' | 'facebookActive' | 'arrows' | 'clock' | 'stamp' | 'star'
+    iconId: 'logo'
+            | 'instagram'
+            | 'instagramActive'
+            | 'telegram'
+            | 'telegramActive'
+            | 'twitter'
+            | 'twitterActive'
+            | 'facebook'
+            | 'facebookActive'
+            | 'arrows'
+            | 'clock'
+            | 'stamp'
+            | 'star'
+            | 'owner_1'
+            | 'owner_2'
+            | 'owner_3'
+            | 'owner_4'
+            | 'owner_5'
     width?: string
     height?: string
     viewBox?: string
