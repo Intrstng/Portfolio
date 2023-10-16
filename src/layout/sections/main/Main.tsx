@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../../Components/FlexWrapper";
 export const Main = () => {
   return (
     <StyledMain justify={'space-between'} align ={'center'}>
-        <StyledDescription direction={'column'}>
+        <MainDescription direction={'column'}>
           <StyledSubtitle>Discover and
             Collect The Best NFTs <span>Digital Art.</span>
           </StyledSubtitle>
@@ -19,27 +19,27 @@ export const Main = () => {
 
           <FlexWrapper>
             <div>
-              <StyledCounter>
+              <MainCounter>
                 8.9<span>K</span>
-              </StyledCounter>
-              <StyledCounterText>Art work</StyledCounterText>
+              </MainCounter>
+              <MainCounterText>Art work</MainCounterText>
             </div>
             <div>
-              <StyledCounter>
+              <MainCounter>
                 65<span>K</span>
-              </StyledCounter>
-              <StyledCounterText>Artist</StyledCounterText>
+              </MainCounter>
+              <MainCounterText>Artist</MainCounterText>
             </div>
             <div>
-              <StyledCounter>
+              <MainCounter>
                 87<span>K</span>
-              </StyledCounter>
-              <StyledCounterText>Collection</StyledCounterText>
+              </MainCounter>
+              <MainCounterText>Collection</MainCounterText>
             </div>
           </FlexWrapper>
 
 
-        </StyledDescription>
+        </MainDescription>
 
 
 
@@ -85,7 +85,7 @@ const StyledMain = styled(FlexWrapper) `
                                   color: white;
 `
 
-const StyledDescription = styled(FlexWrapper) `
+const MainDescription = styled(FlexWrapper) `
   width: 34rem;
   gap: 4.5rem;
   flex-shrink: 0;
@@ -103,7 +103,7 @@ const StyledSubtitle = styled.h2 `
   }
 `
 
-const StyledText = styled.p `
+export const StyledText = styled.p `
   color: #FFFFFD;
   font-family: Inter;
   font-size: 1rem;
@@ -112,7 +112,7 @@ const StyledText = styled.p `
   line-height: 1.6rem;
 `
 
-const StyledActiveBtn = styled.a `
+export const StyledActiveBtn = styled.a `
   //height: 3.25rem;
   padding: 0.75rem 2.5rem;
   color: #090F1D;
@@ -126,7 +126,7 @@ const StyledActiveBtn = styled.a `
                             text-decoration: none;
 `
 
-const StyledBtn = styled.a `
+export const StyledBtn = styled.a `
   padding: 0.75rem 2.5rem;
   color: #FFFFFD;
   font-family: Inter;
@@ -139,7 +139,7 @@ const StyledBtn = styled.a `
   text-decoration: none;
   `
 
-const StyledCounter = styled.h3 `
+const MainCounter = styled.h3 `
   color: #D3F85A;
   font-family: Canela;
   font-size: 3rem;
@@ -151,7 +151,7 @@ const StyledCounter = styled.h3 `
   }
 `
 
-const StyledCounterText = styled.p `
+const MainCounterText = styled.p `
   color: #FFFFFD;
   font-family: Inter;
   font-size: 1rem;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Logo} from "../../Components/logo/Logo";
 import {Menu} from "../../Components/menu/menu";
 import {Button} from "../../Components/button/Button";
+import {StyledActiveBtn} from "../sections/main/Main";
 
 export const Header = () => {
     return (
@@ -12,7 +13,8 @@ export const Header = () => {
             {/*</div>*/}
             <Logo/>
             <Menu/>
-            <Button href={'#'} content={'Contact'}/>
+            {/*<Button href={'#'} content={'Contact'}/>*/}
+            <StyledActiveBtn href="#">Contact</StyledActiveBtn>
         </StyledHeader>
     )
 };
