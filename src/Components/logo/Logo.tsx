@@ -11,13 +11,13 @@ type LogoPropsType = {
 
 export const Logo = (props: LogoPropsType) => {
     return (
-        <a href="#">
+        <StyledLogo href="#">
             <Icon iconId={'logo'}
                   width={'28'}
                   height={'28'}
                   viewBox={'0 0 28 28'}
-                  source={props.sprite}/>Creativeart
-        </a>
+                  source={props.sprite}/><h1>Creative<span>art</span></h1>
+        </StyledLogo>
     );
 };
 
@@ -26,6 +26,19 @@ type AvatarPropsType = {
   avatarSrc: string
   alternativeSrc: string
 }
+
+const StyledLogo = styled.a `
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Canela;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem;
+  span {
+    color: #D3F85A;
+  }
+`
 
 export const Avatar = (props: AvatarPropsType) => {
   return (
