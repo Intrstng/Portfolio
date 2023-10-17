@@ -46,11 +46,21 @@ export const Main = () => {
 
 
                                     <FlexWrapper direction={'column'}>
-        <LogoImage src={LogoImg} alt="hero"/>
+        <Image src={LogoImg}
+                   height={'34rem'}
+                   width={'29rem'}
+                   borderRadius={'1.5rem'}
+                   backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                   alt="hero"/>
+
+
+
            <img src="src/layout/sections/Main" alt="logo"/>
 
 
               <div></div>
+
+
               <StyledBidCard direction={'column'} align={'center'}>
                 <StyledBidBlock justify={'space-between'} align={'flex-start'}>
                 <div>
@@ -160,12 +170,22 @@ const MainCounterText = styled.p `
   line-height: 1.6rem;
 `
 
-const LogoImage = styled.img `
-  height: 34rem;
-  width: 29rem;
+
+
+export type ImagePropsType = {
+  height: string
+  width: string
+  borderRadius?: string
+  backgroundColor?: string
+}
+
+export const Image = styled.img<ImagePropsType> `
+  height: ${(props) => props.height};
+  width: ${(props) => props.width};
   //object-fit: cover;
-  border-radius: 1.5rem;
-  background-color: lightgray 0px -11.436px / 100% 127.941%;
+  border-radius: ${(props) => props.borderRadius || '0'};
+  background-color: ${(props) => props.backgroundColor || 'transparent'};
+  //background-color: lightgray 0px -11.436px / 100% 127.941%;
 `
 
 

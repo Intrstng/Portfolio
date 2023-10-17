@@ -1,12 +1,13 @@
 import React from 'react';
 import amazingImg_1 from "../../assets/images/card_1.png";
-import {StyledOutlinedBtn} from "../../layout/sections/main/Main";
+import {Image, StyledOutlinedBtn} from "../../layout/sections/main/Main";
 import styled from "styled-components";
 import {FlexWrapper, FlexWrapperPropsType} from "../FlexWrapper";
 import iconsSprite from "../../assets/images/icons-sprite.svg";
 import {Icon} from "../icon/Icon";
 import arrowsSvgIcon from '../../assets/images/arrows.svg';
 import clockSvgIcon from '../../assets/images/clock.svg';
+import LogoImg from "../../assets/images/discover.png";
 const arrowIcon = <Icon iconId={'arrows'}
                         width={'24'}
                         height={'25'}
@@ -28,10 +29,16 @@ export const Card = (props: AmazingCardPropsType) => {
     <AmazingCard direction={'column'}
                  justify={'center'}
                  align={'center'}>
-      <img src={props.source} alt={"card image"}/>
+
+      <Image src={props.source}
+             height={'21.25rem'}
+             width={'23.125rem'}
+             borderRadius={'1rem'}
+             backgroundColor={'lightgray 0px -8.761px / 100% 140.853%'}
+             alt="card image"/>
 
 
-<AmazingCardItem direction={'column'}
+<AmazingCardContent direction={'column'}
                  justify={'center'}
                  align={'center'}>
 
@@ -66,7 +73,7 @@ export const Card = (props: AmazingCardPropsType) => {
       </AmazingBidBlock>
 
 
-</AmazingCardItem>
+</AmazingCardContent>
     </AmazingCard>
   );
 };
@@ -87,7 +94,7 @@ const AmazingCard = styled(FlexWrapper) `
   }
 `
 
-const AmazingCardItem = styled(FlexWrapper) `
+const AmazingCardContent = styled(FlexWrapper) `
   gap: 1rem;
   width: 23.125rem;
 `

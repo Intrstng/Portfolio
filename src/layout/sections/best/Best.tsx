@@ -2,7 +2,8 @@ import React from 'react';
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import styled from "styled-components";
-import {StyledActiveBtn, StyledBtn, StyledText} from "../main/Main";
+import {ImagePropsType, StyledActiveBtn, StyledBtn, StyledText} from "../main/Main";
+import {Image} from '../main/Main';
 import LogoImg from "../../../assets/images/discover.png";
 import BestImg_1 from "../../../assets/images/create_1.png";
 import BestImg_2 from "../../../assets/images/create_2.png";
@@ -38,14 +39,18 @@ export const Best = () => {
                            alt="nft"
                            width={"25.625rem"}
                            height={"25rem"}
+                           borderRadius={"1.5rem"}
+                           backgroundColor={"lightgray 0px -16.951px / 100% 125.44%"}
                            bottom={'0'}
                            left={'0'}
                            zIndex={'1'}/>
-              {/* eslint-disable-next-line react/jsx-no-undef */}
+
                     <BestImage src={BestImg_2}
                                alt="nft"
                                width={"25.625rem"}
                                height={"29.6875rem"}
+                               borderRadius={"1.5rem"}
+                               backgroundColor={"lightgray 50%"}
                                top={'0'}
                                right={'0'}/>
             </BestImageBlock>
@@ -94,26 +99,47 @@ const BestImageBlock = styled.div `
   position: relative;
 `
 
-type BestImagePropsType = {
-  width: string
-  height: string
-  top?: string
-  left?: string
-  bottom?: string
-  right?: string
-  zIndex?: string
+// type BestImagePropsType = {
+//      width: string
+//      height: string
+//   top?: string
+//   left?: string
+//   bottom?: string
+//   right?: string
+//   zIndex?: string
+// }
+//
+// const BestImage = styled.img<BestImagePropsType> `
+//   position: absolute;
+//   height: ${(props) => props.height};
+//   width: ${(props) => props.width};
+//   top: ${(props) => props.top || 'unset'};
+//   left: ${(props) => props.left || 'unset'};
+//   bottom: ${(props) => props.bottom || 'unset'};
+//   right: ${(props) => props.right || 'unset'};
+//   z-index: ${(props) => props.zIndex || '0'};
+//                                                           object-fit: cover;
+//   border-radius: 1.5rem;
+//   background-color: lightgray 0px -11.436px / 100% 127.941%;
+// `
+
+
+type BestImagePropsType = ImagePropsType & {
+    top?: string
+    left?: string
+    bottom?: string
+    right?: string
+    zIndex?: string
 }
 
-const BestImage = styled.img<BestImagePropsType> `
+const BestImage = styled(Image)<BestImagePropsType> `
   position: absolute;
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
   top: ${(props) => props.top || 'unset'};
   left: ${(props) => props.left || 'unset'};
   bottom: ${(props) => props.bottom || 'unset'};
   right: ${(props) => props.right || 'unset'};
   z-index: ${(props) => props.zIndex || '0'};
                                                           object-fit: cover;
-  border-radius: 1.5rem;
-  background-color: lightgray 0px -11.436px / 100% 127.941%;
+  //border-radius: 1.5rem;
+  //background-color: lightgray 0px -11.436px / 100% 127.941%;
 `

@@ -4,6 +4,7 @@ import {Logo} from "../../Components/logo/Logo";
 import {Menu} from "../../Components/menu/menu";
 import {Button} from "../../Components/button/Button";
 import {StyledActiveBtn} from "../sections/main/Main";
+import iconsSprite from '../../assets/images/icons-sprite.svg';
 
 export const Header = () => {
     return (
@@ -11,7 +12,7 @@ export const Header = () => {
             {/*<div className="header__logo"><a className="header__logo-link" href="index.html"><h1>PetStory online</h1>*/}
             {/*</a>*/}
             {/*</div>*/}
-            <Logo/>
+            <Logo sprite={iconsSprite}/>
             <Menu/>
             {/*<Button href={'#'} content={'Contact'}/>*/}
             <StyledActiveBtn href="#">Contact</StyledActiveBtn>

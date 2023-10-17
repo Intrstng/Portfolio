@@ -5,14 +5,18 @@ import iconsSprite from '../../assets/images/icons-sprite.svg';
 import ownersSprite from '../../assets/images/owners-sprite.svg';
 import ownerImg_1 from '../../assets/images/owner_1.png';
 
-export  const Logo = () => {
+type LogoPropsType = {
+  sprite: string
+}
+
+export const Logo = (props: LogoPropsType) => {
     return (
         <a href="#">
             <Icon iconId={'logo'}
                   width={'28'}
                   height={'28'}
                   viewBox={'0 0 28 28'}
-                  source={iconsSprite}/>Creativeart
+                  source={props.sprite}/>Creativeart
         </a>
     );
 };
