@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import LogoImg from '../../../assets/images/discover.png';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
+import {StyledBtn, StyledActiveBtn, StyledOutlinedBtn} from "../../../Components/button/Button";
 
 export const Main = () => {
   return (
@@ -12,8 +13,12 @@ export const Main = () => {
           </StyledSubtitle>
           <StyledText>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</StyledText>
             <FlexWrapper>
-              <StyledActiveBtn href="#">Explore Now</StyledActiveBtn>
-              <StyledBtn href="#">Learn More</StyledBtn>
+              <StyledActiveBtn href={'#'}
+                               content={'Explore Now'}
+                               className={'explore'}/>
+              <StyledBtn href={"#"}
+                         content={'Learn More'}
+                         className={'learn'}/>
             </FlexWrapper>
 
 
@@ -55,7 +60,7 @@ export const Main = () => {
 
 
 
-           <img src="src/layout/sections/Main" alt="logo"/>
+           {/*<img src="src/layout/sections/Main" alt="logo"/>*/}
 
 
               <div></div>
@@ -77,7 +82,9 @@ export const Main = () => {
                       <StyledBidCardText>0.24ETH</StyledBidCardText>
                     </div>
                 </StyledBidBlock>
-                  <StyledOutlinedBtn href="#">Place A Bid</StyledOutlinedBtn>
+                  <StyledOutlinedBtn  href={"#"}
+                                      content={'Place A Bid'}
+                                      className={'placeBid'}/>
               </StyledBidCard>
       </FlexWrapper>
     </StyledMain>
@@ -121,33 +128,6 @@ export const StyledText = styled.p `
   font-weight: 400;
   line-height: 1.6rem;
 `
-
-export const StyledActiveBtn = styled.a `
-  //height: 3.25rem;
-  padding: 0.75rem 2.5rem;
-  color: #090F1D;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  border-radius: 0.5rem;
-  background-color: #D3F85A;
-                            text-decoration: none;
-`
-
-export const StyledBtn = styled.a `
-  padding: 0.75rem 2.5rem;
-  color: #FFFFFD;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  `
 
 const MainCounter = styled.h3 `
   color: #D3F85A;
@@ -234,16 +214,3 @@ const StyledBidCardText = styled.h5 `
   line-height: 1.2rem;
 `
 
-export const StyledOutlinedBtn = styled.a `
-  //height: 3.25rem;
-  padding: 0.75rem 2.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--Primary, #D3F85A);
-  color: #D3F85A;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  text-decoration: none;
-`

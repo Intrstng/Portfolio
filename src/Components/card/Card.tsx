@@ -1,6 +1,6 @@
 import React from 'react';
 import amazingImg_1 from "../../assets/images/card_1.png";
-import {Image, StyledOutlinedBtn} from "../../layout/sections/main/Main";
+import {Image} from "../../layout/sections/main/Main";
 import styled from "styled-components";
 import {FlexWrapper, FlexWrapperPropsType} from "../FlexWrapper";
 import iconsSprite from "../../assets/images/icons-sprite.svg";
@@ -8,6 +8,7 @@ import {Icon} from "../icon/Icon";
 import arrowsSvgIcon from '../../assets/images/arrows.svg';
 import clockSvgIcon from '../../assets/images/clock.svg';
 import LogoImg from "../../assets/images/discover.png";
+import {StyledOutlinedBtn} from "../button/Button";
 const arrowIcon = <Icon iconId={'arrows'}
                         width={'24'}
                         height={'25'}
@@ -21,6 +22,7 @@ type AmazingCardPropsType = {
   title: string
   price?: number
   time?: string
+  btnClassName: string
 }
 
 export const Card = (props: AmazingCardPropsType) => {
@@ -67,9 +69,10 @@ export const Card = (props: AmazingCardPropsType) => {
               </h5>
         </AmazingBidCounter>
 
-            <StyledOutlinedBtn>
-              Place A Bid
-            </StyledOutlinedBtn>
+            <StyledOutlinedBtn  href={"#"}
+                                content={'Place A Bid'}
+                                className={props.btnClassName}/>
+
       </AmazingBidBlock>
 
 

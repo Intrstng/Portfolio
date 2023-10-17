@@ -1,12 +1,85 @@
 import React from 'react';
+import styled from "styled-components";
+
+type LinkPropsType = {
+    href?: string
+    className: string
+    content?: string
+}
 
 type ButtonPropsType = {
+    className: string
     content?: string
-    href: string
 }
+
+export const Link = (props: LinkPropsType) => {
+    return (
+        <a href={props.href || '#'} className={props.className}>{props.content || 'Link'}</a>
+    );
+};
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <a href={props.href || '#'}>{props.content || 'Link'}</a>
+      <button className={props.className}>{props.content || 'Submit'}</button>
     );
 };
+
+export const StyledActiveBtn = styled(Link) `
+  //height: 3.25rem;
+  padding: 0.75rem 2.5rem;
+  color: #090F1D;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #D3F85A;
+                            text-decoration: none;
+`
+
+export const StyledBtn = styled(Link) `
+  padding: 0.75rem 2.5rem;
+  color: #FFFFFD;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2rem;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  `
+
+export const StyledOutlinedBtn = styled(Link) `
+  //height: 3.25rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #D3F85A;
+  color: #D3F85A;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2rem;
+  text-decoration: none;
+`
+
+export const StyledSubmitBtn = styled(Button) `
+  //height: 3.25rem;
+  padding: 0.75rem 2.5rem;
+  color: #090F1D;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #D3F85A;
+  cursor: pointer;
+`
+
+
+
+

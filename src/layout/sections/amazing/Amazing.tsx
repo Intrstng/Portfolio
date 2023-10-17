@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
-import {Button} from "../../../Components/button/Button";
-import {StyledActiveBtn, StyledOutlinedBtn} from "../main/Main";
+import {StyledActiveBtn} from "../../../Components/button/Button";
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {Card} from "../../../Components/card/Card";
 import amazingImg_1 from "../../../assets/images/card_1.png";
 import amazingImg_2 from "../../../assets/images/card_2.png";
 import amazingImg_3 from "../../../assets/images/card_3.png";
-import iconsSprite from "../../../assets/images/icons-sprite.svg";
+
 
 export const Amazing = () => {
   return (
@@ -19,8 +18,11 @@ export const Amazing = () => {
               <span>Amazing</span> and Super
               Unique Art of This <span>Week</span>
           </SectionTitle>
-              {/*<Button href={'#'} content={'See All'}/>*/}
-              <StyledActiveBtn href="#">See All</StyledActiveBtn>
+
+
+              <StyledActiveBtn href={'#'}
+                               content={'See All'}
+                               className={'see'}/>
       </AmazingTitleBlock>
 
       {/* gap: 1.88rem; */}
@@ -29,15 +31,18 @@ export const Amazing = () => {
           <Card source={amazingImg_1}
                 title={'Cyberpunk Cocomo'}
                 price={490}
-                time={'03:24:56'}/>
+                time={'03:24:56'}
+                btnClassName={'placeBid_1'}/>
             <Card source={amazingImg_2}
                   title={'Charge, Qi tiao yu'}
                   price={490}
-                  time={'03:24:56'}/>
+                  time={'03:24:56'}
+                  btnClassName={'placeBid_2'}/>
               <Card source={amazingImg_3}
                     title={'Surgeon, Josh Rife'}
                     price={490}
-                    time={'03:24:56'}/>
+                    time={'03:24:56'}
+                    btnClassName={'placeBid_3'}/>
       </FlexWrapper>
 
     </StyledAmazing>

@@ -2,8 +2,8 @@ import React from 'react';
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import styled from "styled-components";
-import {ImagePropsType, StyledActiveBtn, StyledBtn, StyledText} from "../main/Main";
-import {Image} from '../main/Main';
+import {StyledActiveBtn, StyledBtn} from "../../../Components/button/Button";
+import {Image, ImagePropsType, StyledText} from '../main/Main';
 import LogoImg from "../../../assets/images/discover.png";
 import BestImg_1 from "../../../assets/images/create_1.png";
 import BestImg_2 from "../../../assets/images/create_2.png";
@@ -29,13 +29,18 @@ export const Best = () => {
 
 
                     <FlexWrapper>
-                      <StyledActiveBtn href="#">Create Now</StyledActiveBtn>
-                      <StyledBtn href="#">Learn More</StyledBtn>
+                      <StyledActiveBtn href={'#'}
+                                       content={'Create Now'}
+                                       className={'create'}/>
+
+                      <StyledBtn href={'#'}
+                                       content={'Learn More'}
+                                       className={'learn'}/>
                     </FlexWrapper>
             </BestDescription>
 
             <BestImageBlock>
-                <BestImage src={BestImg_1}
+                <PositionedImage src={BestImg_1}
                            alt="nft"
                            width={"25.625rem"}
                            height={"25rem"}
@@ -45,7 +50,7 @@ export const Best = () => {
                            left={'0'}
                            zIndex={'1'}/>
 
-                    <BestImage src={BestImg_2}
+                    <PositionedImage src={BestImg_2}
                                alt="nft"
                                width={"25.625rem"}
                                height={"29.6875rem"}
@@ -93,7 +98,7 @@ const BestText = styled(StyledText) `
   margin-bottom: 2.5rem;
 `
 
-const BestImageBlock = styled.div `
+export const BestImageBlock = styled.div `
   width: 46.245rem;
   height: 34.94rem;
   position: relative;
@@ -124,7 +129,7 @@ const BestImageBlock = styled.div `
 // `
 
 
-type BestImagePropsType = ImagePropsType & {
+type PositionedImagePropsType = ImagePropsType & {
     top?: string
     left?: string
     bottom?: string
@@ -132,7 +137,7 @@ type BestImagePropsType = ImagePropsType & {
     zIndex?: string
 }
 
-const BestImage = styled(Image)<BestImagePropsType> `
+export const PositionedImage = styled(Image)<PositionedImagePropsType> `
   position: absolute;
   top: ${(props) => props.top || 'unset'};
   left: ${(props) => props.left || 'unset'};
