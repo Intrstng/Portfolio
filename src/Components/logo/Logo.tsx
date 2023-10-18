@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Icon} from "../icon/Icon";
-import iconsSprite from '../../assets/images/icons-sprite.svg';
-import ownersSprite from '../../assets/images/owners-sprite.svg';
-import ownerImg_1 from '../../assets/images/owner_1.png';
 
 type LogoPropsType = {
   sprite: string

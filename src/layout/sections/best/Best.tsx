@@ -14,28 +14,26 @@ export const Best = () => {
           <FlexWrapper justify={'space-between'}
                         align={'center'}>
 
-
             <BestDescription direction={'column'}
                              justify={'flex-start'}
                              align={'flex-start'}>
-              <BestTitle>
-                Create And Sell Your <span>Best NFTs</span>
-              </BestTitle>
+                <BestTitle>
+                  Create And Sell Your <span>Best NFTs</span>
+                </BestTitle>
 
-
-                <BestText>
-                  Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!
-                </BestText>
+                    <BestText>
+                      Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!
+                    </BestText>
 
 
                     <FlexWrapper>
-                      <StyledActiveBtn href={'#'}
-                                       content={'Create Now'}
-                                       className={'create'}/>
+                        <StyledActiveBtn href={'#'}
+                                         content={'Create Now'}
+                                         className={'create'}/>
 
-                      <StyledBtn href={'#'}
-                                       content={'Learn More'}
-                                       className={'learn'}/>
+                        <StyledBtn href={'#'}
+                                         content={'Learn More'}
+                                         className={'learn'}/>
                     </FlexWrapper>
             </BestDescription>
 
@@ -59,18 +57,13 @@ export const Best = () => {
                                top={'0'}
                                right={'0'}/>
             </BestImageBlock>
-
-
           </FlexWrapper>
       </StyledBest>
-
-
-
   );
 };
 
-const StyledBest = styled.section`
-  //display: inline-flex;
+const StyledBest = styled.section `
+  display: flex;
   margin: 0 auto;
   padding: 5.75rem 6.9375rem;
   width: 94.5rem;

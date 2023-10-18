@@ -4,53 +4,50 @@ import {FlexWrapper} from "../../../Components/FlexWrapper";
 import {StyledActiveBtn} from "../../../Components/button/Button";
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {Card} from "../../../Components/card/Card";
-import amazingImg_1 from "../../../assets/images/card_1.png";
-import amazingImg_2 from "../../../assets/images/card_2.png";
-import amazingImg_3 from "../../../assets/images/card_3.png";
+import cardImg_1 from "../../../assets/images/card_1.png";
+import cardImg_2 from "../../../assets/images/card_2.png";
+import cardImg_3 from "../../../assets/images/card_3.png";
 
 
-export const Amazing = () => {
+export const Cards = () => {
   return (
-    <StyledAmazing>
-      <AmazingTitleBlock justify={'space-between'}
+    <StyledCards>
+      <CardsTitleBlock justify={'space-between'}
                          align={'flex-end'}>
           <SectionTitle>
               <span>Amazing</span> and Super
               Unique Art of This <span>Week</span>
           </SectionTitle>
-
-
               <StyledActiveBtn href={'#'}
                                content={'See All'}
                                className={'see'}/>
-      </AmazingTitleBlock>
+      </CardsTitleBlock>
 
-      {/* gap: 1.88rem; */}
+
       <FlexWrapper  justify={'space-between'}
                     align={'flex-start'}>
-          <Card source={amazingImg_1}
+          <Card source={cardImg_1}
                 title={'Cyberpunk Cocomo'}
                 price={490}
                 time={'03:24:56'}
                 btnClassName={'placeBid_1'}/>
-            <Card source={amazingImg_2}
+            <Card source={cardImg_2}
                   title={'Charge, Qi tiao yu'}
                   price={490}
                   time={'03:24:56'}
                   btnClassName={'placeBid_2'}/>
-              <Card source={amazingImg_3}
+              <Card source={cardImg_3}
                     title={'Surgeon, Josh Rife'}
                     price={490}
                     time={'03:24:56'}
                     btnClassName={'placeBid_3'}/>
       </FlexWrapper>
 
-    </StyledAmazing>
-
+    </StyledCards>
   );
 };
 
-const StyledAmazing = styled.section`
+const StyledCards = styled.section`
   margin: 0 auto;
   padding: 5.75rem 6.9375rem;
   width: 94.5rem;
@@ -61,7 +58,7 @@ const StyledAmazing = styled.section`
   background-color: #090F1D;
 `
 
-const AmazingTitleBlock = styled(FlexWrapper) `
+const CardsTitleBlock = styled(FlexWrapper) `
   margin-bottom: 4rem;
 `
 

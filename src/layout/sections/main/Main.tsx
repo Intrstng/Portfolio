@@ -6,7 +6,8 @@ import {StyledBtn, StyledActiveBtn, StyledOutlinedBtn} from "../../../Components
 
 export const Main = () => {
   return (
-    <StyledMain justify={'space-between'} align ={'center'}>
+    <StyledMain justify={'space-between'}
+                align ={'center'}>
         <MainDescription direction={'column'}>
           <StyledSubtitle>Discover and
             Collect The Best NFTs <span>Digital Art.</span>
@@ -20,7 +21,6 @@ export const Main = () => {
                          content={'Learn More'}
                          className={'learn'}/>
             </FlexWrapper>
-
 
           <FlexWrapper>
             <div>
@@ -42,32 +42,25 @@ export const Main = () => {
               <MainCounterText>Collection</MainCounterText>
             </div>
           </FlexWrapper>
-
-
         </MainDescription>
 
-
-
-
-
-                                    <FlexWrapper direction={'column'}>
+        <FlexWrapper direction={'column'}>
         <Image src={LogoImg}
                    height={'34rem'}
                    width={'29rem'}
                    borderRadius={'1.5rem'}
                    backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                    alt="hero"/>
-
-
-
            {/*<img src="src/layout/sections/Main" alt="logo"/>*/}
 
 
               <div></div>
 
 
-              <StyledBidCard direction={'column'} align={'center'}>
-                <StyledBidBlock justify={'space-between'} align={'flex-start'}>
+              <StyledBidCard direction={'column'}
+                             align={'center'}>
+                <StyledBidBlock justify={'space-between'}
+                                align={'flex-start'}>
                 <div>
                   <StyledBidCardSubtitle>
                     Ends in
@@ -90,8 +83,6 @@ export const Main = () => {
     </StyledMain>
   );
 };
-
-
 
 
 const StyledMain = styled(FlexWrapper) `
@@ -150,8 +141,6 @@ const MainCounterText = styled.p `
   line-height: 1.6rem;
 `
 
-
-
 export type ImagePropsType = {
   height: string
   width: string
@@ -168,10 +157,6 @@ export const Image = styled.img<ImagePropsType> `
   //background-color: lightgray 0px -11.436px / 100% 127.941%;
 `
 
-
-
-
-
 const StyledBidCard = styled(FlexWrapper) `
   width: 19rem;
   padding: 1.25rem;
@@ -186,14 +171,6 @@ const StyledBidBlock = styled(FlexWrapper) `
   width: 16.5rem;
   
 `
-
-
-
-
-
-
-
-
 
 const StyledBidCardSubtitle = styled.h4 `
   margin-bottom: 0.5rem;
