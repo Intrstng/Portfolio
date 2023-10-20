@@ -27,7 +27,7 @@ type AvatarPropsType = {
 const StyledLogo = styled.a `
   text-decoration: none;
   color: #FFFFFF;
-  font-family: Canela;
+  font-family: Canela, sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
