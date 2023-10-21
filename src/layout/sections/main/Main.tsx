@@ -103,7 +103,7 @@ const MainDescription = styled(FlexWrapper)`
 
 const StyledSubtitle = styled.h2`
   color: #FFFFFD;
-  font-family: Canela;
+  font-family: Canela, sans-serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 500;

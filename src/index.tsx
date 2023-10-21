@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {GlobalStyles} from "./styles/GlobalStyles";
+import {GlobalStyled} from "./styles/Global.Styled";
 import { ThemeProvider } from 'styled-components';
 import {myTheme} from "./styles/Theme.styled.";
 
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <ThemeProvider theme={myTheme}>
     <App />
-    <GlobalStyles />
+    <GlobalStyled />
   </ThemeProvider>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Icon} from "../icon/Icon";
+import {myTheme} from "../../styles/Theme.styled.";
 
 type LogoPropsType = {
   sprite: string
@@ -8,7 +9,7 @@ type LogoPropsType = {
 
 export const Logo = (props: LogoPropsType) => {
     return (
-        <StyledLogo href="#">
+        <StyledLogo href="#index.html">
             <Icon iconId={'logo'}
                   width={'28'}
                   height={'28'}
@@ -18,31 +19,39 @@ export const Logo = (props: LogoPropsType) => {
     );
 };
 
-
 type AvatarPropsType = {
   avatarSrc: string
   alternativeSrc: string
 }
 
 const StyledLogo = styled.a `
+  margin-left: 3.6rem;
+  align-self: flex-end;
   text-decoration: none;
-  color: #FFFFFF;
-  font-family: Canela, sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2.4rem;
+  color: ${myTheme.colors.light};
+  position: relative;
+  h1 {
+    font-family: Canela, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 120%;
+  }
   span {
-    color: #D3F85A;
+    color: ${myTheme.colors.secondary};
+  }
+  svg {
+    position: absolute;
+    top: -1.4rem;
+    left: -3.6rem;
   }
 `
 
-export const Avatar = (props: AvatarPropsType) => {
-  return (
-    <object type="image/svg+xml" data={props.avatarSrc} width="48" height="48">
-      <img src={props.alternativeSrc} width="48" height="48" alt="avatar png"/>
-    </object>
-  );
-}
+                        export const Avatar = (props: AvatarPropsType) => {
+                          return (
+                            <object type="image/svg+xml" data={props.avatarSrc} width="48" height="48">
+                              <img src={props.alternativeSrc} width="48" height="48" alt="avatar png"/>
+                            </object>
+                          );
+                        }
 
 

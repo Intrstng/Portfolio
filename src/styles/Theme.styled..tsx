@@ -1,6 +1,10 @@
 export const myTheme = {
-  // colors: {
-  //   light: '#ffffff',
+  colors: {
+    light: '#FFFFFF',
+    primary: '#FFFFFD',
+    secondary: '#D3F85A',
+    bground: '#090F1D',
+
   //   font: '#ABB3BA',
   //   bground: '#f5f5f5',
   //   imgBground: '#d3d3d3',
@@ -19,5 +23,5 @@ export const myTheme = {
   // media: {
   //   tablet: 'screen and (max-width: 768px) and (min-width: 577px)',
   //   mobile: 'screen and (max-width: 576px)'
-  // }
+  }
 }

@@ -6,9 +6,9 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
               <li><a href="#">Marketplace</a></li>
-              <li><a href="#">Artists</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Collections</a></li>
+              <li><a href="#artists">Artists</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#collections">Collections</a></li>
             </ul>
         </StyledMenu>
     );
@@ -17,14 +17,16 @@ export const Menu = () => {
 const StyledMenu = styled.nav `
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    width: 27.2rem;
-    //height: 1.63rem;
-    gap: 2.5rem;
+    width: 48.5rem;
+    gap: 4rem;
+    list-style-type: none;
   }
   a {
     text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 160%;
   }
 `

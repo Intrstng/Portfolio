@@ -9,6 +9,17 @@
 }
 
 @font-face {
+    font-family: Canela;
+    src: local('Canela'),
+         url(./assets/fonts/Canela-Medium.eot),
+         url(./assets/fonts/Canela-Medium.woff2) format('woff2'),
+         url(./assets/fonts/Canela-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
   font-family: Canela;
   src: local('Canela'),
       url(./assets/fonts/canela-Bold.eot?) format('eot'),

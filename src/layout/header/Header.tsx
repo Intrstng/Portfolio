@@ -5,27 +5,28 @@ import {Menu} from "../../Components/menu/menu";
 import {StyledActiveBtn} from "../../Components/button/Button";
 import iconsSprite from '../../assets/images/icons-sprite.svg';
 import {FlexWrapper} from "../../Components/FlexWrapper";
+import {ContainerWrapper} from "../../Components/ContainerWrapper";
 
 export const Header = () => {
 
     return (
-        <StyledHeader>
-            <Logo sprite={iconsSprite}/>
-            <Menu/>
-            <StyledActiveBtn href={'#'}
-                             content={'Contact'}
-                             className={'contact'}/>
-        </StyledHeader>
+        <ContainerWrapper>
+            <StyledHeader>
+                <Logo sprite={iconsSprite}/>
+                <Menu/>
+                <StyledActiveBtn href={'#'}
+                                 content={'Contact'}
+                                 className={'contact'}/>
+            </StyledHeader>
+        </ContainerWrapper>
+
     )
 };
 
 const StyledHeader = styled.header`
-  margin: 0 auto;
-  width: 94.5rem;
-  padding: 1.75rem 6.9375rem;
+  padding: 1.6rem 0 0;
+  height: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #090F1D;
 `
-
