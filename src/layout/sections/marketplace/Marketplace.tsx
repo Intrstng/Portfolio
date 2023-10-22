@@ -8,7 +8,7 @@ import BestImg_2 from '../../../assets/images/create_2.png';
 import {Button} from '../../../Components/button/Button';
 import {Image} from '../../../Components/image/Image';
 import {ContainerWrapper} from '../../../Components/ContainerWrapper';
-import {myTheme} from "../../../styles/Theme.styled";
+import {myTheme} from '../../../styles/Theme.styled';
 
 export const Marketplace = () => {
     return (
@@ -38,26 +38,8 @@ export const Marketplace = () => {
                     </MarketplaceDescription>
 
                     <MarketplaceImageBlock>
-                        <Image src={BestImg_1}
-                               alt='nft'
-                            // width={"25.625rem"}
-                            // height={"25rem"}
-                            // borderRadius={"1.5rem"}
-                            // backgroundColor={"lightgray 0px -16.951px / 100% 125.44%"}
-                            // bottom={'0'}
-                            // left={'0'}
-                            // zIndex={'1'}
-                        />
-
-                        <Image src={BestImg_2}
-                               alt='nft'
-                            // width={"25.625rem"}
-                            // height={"29.6875rem"}
-                            // borderRadius={"1.5rem"}
-                            // backgroundColor={"lightgray 50%"}
-                            // top={'0'}
-                            // right={'0'}
-                        />
+                        <Image src={BestImg_1} alt='nft'/>
+                        <Image src={BestImg_2}alt='nft'/>
                     </MarketplaceImageBlock>
                 </FlexWrapper>
             </StyledMarketplace>
@@ -68,11 +50,7 @@ export const Marketplace = () => {
 const StyledMarketplace = styled.section`
   margin: 0 auto;
   padding: 7.8rem 0;
-  background-color: #090F1D;
-  //gap: 7.75rem;
 `
-
-
 
 const MarketplaceDescription = styled(FlexWrapper)`
   width: 42.6rem;
@@ -87,23 +65,13 @@ const MarketplaceTitle = styled(SectionTitle)`
 `
 
 const MarketplaceText = styled(StyledText)`
-  //width: 100%;
-  //margin-bottom: 2.5rem;
+  width: 100%;
 `
 
 export const MarketplaceImageBlock = styled.div`
   width: 74rem;
   height: 55.6rem;
   position: relative;
-  ${Image}:nth-child(2) {
-    width: 41rem;
-    height: 47.5rem;
-    border-radius: 2.4rem;
-    background-color: ${myTheme.colors.bgroundLight} 50%;
-    top: 0;
-    right: 0;
-    z-index: 0;
-  }
   ${Image}:nth-child(1) {
     width: 41rem;
     height: 40rem;
@@ -113,64 +81,13 @@ export const MarketplaceImageBlock = styled.div`
     left: 0;
     z-index: 1;
   }
+  ${Image}:nth-child(2) {
+    width: 41rem;
+    height: 47.5rem;
+    border-radius: 2.4rem;
+    background-color: ${myTheme.colors.bgroundLight} 50%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
 `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// type BestImagePropsType = {
-//      width: string
-//      height: string
-//   top?: string
-//   left?: string
-//   bottom?: string
-//   right?: string
-//   zIndex?: string
-// }
-//
-// const BestImage = styled.img<BestImagePropsType> `
-//   position: absolute;
-//   height: ${(props) => props.height};
-//   width: ${(props) => props.width};
-//   top: ${(props) => props.top || 'unset'};
-//   left: ${(props) => props.left || 'unset'};
-//   bottom: ${(props) => props.bottom || 'unset'};
-//   right: ${(props) => props.right || 'unset'};
-//   z-index: ${(props) => props.zIndex || '0'};
-//                                                           object-fit: cover;
-//   border-radius: 1.5rem;
-//   background-color: lightgray 0px -11.436px / 100% 127.941%;
-// `
-
-//
-// type PositionedImagePropsType = ImagePropsType & {
-//     top?: string
-//     left?: string
-//     bottom?: string
-//     right?: string
-//     zIndex?: string
-// }
-//
-// export const PositionedImage = styled(Image)<PositionedImagePropsType> `
-//   position: absolute;
-//   top: ${(props) => props.top || 'unset'};
-//   left: ${(props) => props.left || 'unset'};
-//   bottom: ${(props) => props.bottom || 'unset'};
-//   right: ${(props) => props.right || 'unset'};
-//   z-index: ${(props) => props.zIndex || '0'};
-//                                                           object-fit: cover;
-//   //border-radius: 1.5rem;
-//   //background-color: lightgray 0px -11.436px / 100% 127.941%;
-// `
