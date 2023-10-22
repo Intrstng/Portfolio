@@ -5,7 +5,8 @@ export const myTheme = {
     fontLight: 'rgba(255, 255, 253, 0.72)',
     secondary: '#D3F85A',
     dark: '#090F1D',
-
+    shadow: 'rgba(23, 36, 65, 0.04)',
+    bground: '#131E3A',
   //   font: '#ABB3BA',
   //   bground: '#f5f5f5',
   //   imgBground: '#d3d3d3',

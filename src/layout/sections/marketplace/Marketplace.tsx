@@ -3,12 +3,13 @@ import {SectionTitle} from "../../../Components/SectionTitle";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import styled from "styled-components";
 import {StyledActiveBtn, StyledBtn} from "../../../Components/button/Button-add";
-import {Image, ImagePropsType, StyledText} from '../main/Main';
+import {Image, ImagePropsType, StyledText} from '../explore/Explore';
 import LogoImg from "../../../assets/images/discover.png";
 import BestImg_1 from "../../../assets/images/create_1.png";
 import BestImg_2 from "../../../assets/images/create_2.png";
+import {Button} from "../../../Components/button/Button";
 
-export const Best = () => {
+export const Marketplace = () => {
   return (
       <StyledBest>
           <FlexWrapper justify={'space-between'}
@@ -27,11 +28,10 @@ export const Best = () => {
 
 
                     <FlexWrapper>
-                        <StyledActiveBtn content={'Create Now'}
-                                         className={'create'}/>
-
-                        <StyledBtn content={'Learn More'}
-                                   className={'learn'}/>
+                        <Button btnType={'primary'}
+                                className={'create'} active>Create Now</Button>
+                        <Button btnType={'primary'}
+                                className={'learn'}>Learn More</Button>
                     </FlexWrapper>
             </BestDescription>
 

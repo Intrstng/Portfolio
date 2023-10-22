@@ -1,13 +1,14 @@
 import React from 'react';
 import {StyledSubmitBtn} from "../button/Button-add";
 import styled from "styled-components";
+import {Button} from "../button/Button";
 
 export const Form = () => {
   return (
     <StyledForm>
       <input type="text" placeholder="Enter your e-mail" required/>
-      <StyledSubmitBtn content={'Subscribe'}
-                       className={'subscribe'}/>`
+        <Button btnType={'primary'}
+                className={'subscribe'} active>Subscribe</Button>
     </StyledForm>
   );
 };

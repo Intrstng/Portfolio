@@ -7,11 +7,12 @@ type ButtonPropsType = {
 }
 
 export const Button = styled.button<ButtonPropsType>`
-  padding: 1.2rem 4rem;
+  padding: 1.4rem 4rem;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 120%;
+  white-space: nowrap;
   transition: 0.3s transform ease-in-out,
               0.3s color ease-in-out;
   cursor: pointer;

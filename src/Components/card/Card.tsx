@@ -1,6 +1,6 @@
 import React from 'react';
 import amazingImg_1 from "../../assets/images/card_1.png";
-import {Image} from "../../layout/sections/main/Main";
+import {Image} from "../../layout/sections/explore/Explore";
 import styled from "styled-components";
 import {FlexWrapper, FlexWrapperPropsType} from "../FlexWrapper";
 import iconsSprite from "../../assets/images/icons-sprite.svg";
@@ -9,6 +9,8 @@ import arrowsSvgIcon from '../../assets/images/arrows.svg';
 import clockSvgIcon from '../../assets/images/clock.svg';
 import LogoImg from "../../assets/images/discover.png";
 import {StyledOutlinedBtn} from "../button/Button-add";
+import {Button} from "../button/Button";
+import {Link} from "../link/Link.styled";
 const arrowIcon = <Icon iconId={'arrows'}
                         width={'24'}
                         height={'25'}
@@ -28,7 +30,7 @@ type AmazingCardPropsType = {
 export const Card = (props: AmazingCardPropsType) => {
 
   return (
-    <AmazingCard direction={'column'}
+    <CardContainer direction={'column'}
                  justify={'center'}
                  align={'center'}>
 
@@ -40,11 +42,11 @@ export const Card = (props: AmazingCardPropsType) => {
              alt="card image"/>
 
 
-<AmazingCardContent direction={'column'}
+<CardContent direction={'column'}
                  justify={'center'}
                  align={'center'}>
 
-      <AmazingCardDescription justify={'space-between'}
+      <CardDescription justify={'space-between'}
                               align={'flex-start'}>
         <h4>
           {props.title}
@@ -53,12 +55,12 @@ export const Card = (props: AmazingCardPropsType) => {
         <h5>
           {props.price}ETH
         </h5>
-      </AmazingCardDescription>
+      </CardDescription>
 
-      <AmazingBidBlock justify={'space-between'}
+      <CardBidBlock justify={'space-between'}
                    align={'flex-end'}>
 
-        <AmazingBidCounter direction={'column'}
+        <CardBidCounter direction={'column'}
                            align={'flex-start'}>
             <p>
               Ending In
@@ -67,20 +69,21 @@ export const Card = (props: AmazingCardPropsType) => {
               <h5>
                 {props.time}
               </h5>
-        </AmazingBidCounter>
+        </CardBidCounter>
 
-            <StyledOutlinedBtn  content={'Place A Bid'}
-                                className={props.btnClassName}/>
+          <Button as={ Link } href={'#'}
+                  btnType={'outlined'}
+                  className={props.btnClassName}>Place A Bid</Button>
 
-      </AmazingBidBlock>
+      </CardBidBlock>
 
 
-</AmazingCardContent>
-    </AmazingCard>
+</CardContent>
+    </CardContainer>
   );
 };
 
-const AmazingCard = styled(FlexWrapper) `
+const CardContainer = styled(FlexWrapper) `
   width: 25.625rem;
   padding: 1.25rem;
   gap: 1.5rem;
@@ -96,12 +99,12 @@ const AmazingCard = styled(FlexWrapper) `
   }
 `
 
-const AmazingCardContent = styled(FlexWrapper) `
+const CardContent = styled(FlexWrapper) `
   gap: 1rem;
   width: 23.125rem;
 `
 
-const AmazingCardDescription = styled(FlexWrapper) `
+const CardDescription = styled(FlexWrapper) `
   width: 100%;
   color: #FFFFFD;
   font-family: Inter;
@@ -125,11 +128,11 @@ const AmazingCardDescription = styled(FlexWrapper) `
   }
 `
 
-const AmazingBidBlock = styled(FlexWrapper) `
+const CardBidBlock = styled(FlexWrapper) `
   width: 100%;
 `
 
-const AmazingBidCounter = styled(FlexWrapper) `
+const CardBidCounter = styled(FlexWrapper) `
   gap: 0.25rem;
   font-family: Inter;
   font-style: normal;

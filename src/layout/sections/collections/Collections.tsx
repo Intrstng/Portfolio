@@ -7,9 +7,11 @@ import {Card} from "../../../Components/card/Card";
 import cardImg_1 from "../../../assets/images/card_1.png";
 import cardImg_2 from "../../../assets/images/card_2.png";
 import cardImg_3 from "../../../assets/images/card_3.png";
+import {Button} from "../../../Components/button/Button";
+import {Link} from "../../../Components/link/Link.styled";
 
 
-export const Cards = () => {
+export const Collections = () => {
   return (
     <StyledCards>
       <CardsTitleBlock justify={'space-between'}
@@ -18,8 +20,9 @@ export const Cards = () => {
               <span>Amazing</span> and Super
               Unique Art of This <span>Week</span>
           </SectionTitle>
-              <StyledActiveBtn content={'See All'}
-                               className={'see'}/>
+                <Button as={ Link } href={'#'} target={'_blank'}
+                      btnType={'primary'}
+                      className={'see'} active>See All</Button>
       </CardsTitleBlock>
 
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
-import {BestImageBlock, PositionedImage} from "../best/Best";
+import {BestImageBlock, PositionedImage} from "../marketplace/Marketplace";
 import styled from "styled-components";
 import subscribeImg_1 from '../../../assets/images/subscribe_1.png';
 import subscribeImg_2 from '../../../assets/images/subscribe_2.png';
-import {StyledText} from "../main/Main";
+import {StyledText} from "../explore/Explore";
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {Form} from "../../../Components/form/Form";
 

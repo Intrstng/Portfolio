@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../Components/SectionTitle";
-import {Image} from "../main/Main";
+import {Image} from "../explore/Explore";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import ownerAvatarSvg_1 from '../../../assets/images/owner_1.svg';
 import ownerAvatarSvg_2 from '../../../assets/images/owner_2.svg';
@@ -20,6 +20,7 @@ import ownerImg_3 from "../../../assets/images/popular_3.png";
 import ownerImg_4 from "../../../assets/images/popular_4.png";
 import ownerImg_5 from "../../../assets/images/popular_5.png";
 import {StyledActiveBtn} from "../../../Components/button/Button-add";
+import {Button} from "../../../Components/button/Button";
 
 
 export const Artists = () => {
@@ -30,8 +31,8 @@ export const Artists = () => {
         <SectionTitle>
           Popular <span>Artists</span> On This Week
         </SectionTitle>
-        <StyledActiveBtn content={'See All'}
-                         className={'see'}/>
+        <Button btnType={'primary'}
+                className={'see'} active>See</Button>
 
       </ArtistsTitleBlock>
 

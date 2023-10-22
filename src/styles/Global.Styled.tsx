@@ -20,5 +20,6 @@ export const GlobalStyled = createGlobalStyle `
     font-style: normal;
     font-weight: normal;
     line-height: 120%;
+    box-sizing: border-box;
   }
 `
