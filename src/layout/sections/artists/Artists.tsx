@@ -30,8 +30,7 @@ export const Artists = () => {
         <SectionTitle>
           Popular <span>Artists</span> On This Week
         </SectionTitle>
-        <StyledActiveBtn href={'#'}
-                         content={'See All'}
+        <StyledActiveBtn content={'See All'}
                          className={'see'}/>
 
       </ArtistsTitleBlock>

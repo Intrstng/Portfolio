@@ -69,8 +69,7 @@ export const Card = (props: AmazingCardPropsType) => {
               </h5>
         </AmazingBidCounter>
 
-            <StyledOutlinedBtn  href={"#"}
-                                content={'Place A Bid'}
+            <StyledOutlinedBtn  content={'Place A Bid'}
                                 className={props.btnClassName}/>
 
       </AmazingBidBlock>

@@ -18,8 +18,7 @@ export const Cards = () => {
               <span>Amazing</span> and Super
               Unique Art of This <span>Week</span>
           </SectionTitle>
-              <StyledActiveBtn href={'#'}
-                               content={'See All'}
+              <StyledActiveBtn content={'See All'}
                                className={'see'}/>
       </CardsTitleBlock>
 

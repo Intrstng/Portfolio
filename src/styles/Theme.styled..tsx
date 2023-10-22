@@ -2,6 +2,7 @@ export const myTheme = {
   colors: {
     light: '#FFFFFF',
     primary: '#FFFFFD',
+    fontLight: 'rgba(255, 255, 253, 0.72)',
     secondary: '#D3F85A',
     bground: '#090F1D',
 

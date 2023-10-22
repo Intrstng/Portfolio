@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Icon} from "../icon/Icon";
-import {myTheme} from "../../styles/Theme.styled.";
+import {Icon} from '../icon/Icon';
+import {myTheme} from '../../styles/Theme.styled.';
 
 type LogoPropsType = {
   sprite: string
@@ -9,7 +9,7 @@ type LogoPropsType = {
 
 export const Logo = (props: LogoPropsType) => {
     return (
-        <StyledLogo href="#index.html">
+        <StyledLogo href='#index.html'>
             <Icon iconId={'logo'}
                   width={'28'}
                   height={'28'}
@@ -48,8 +48,8 @@ const StyledLogo = styled.a `
 
                         export const Avatar = (props: AvatarPropsType) => {
                           return (
-                            <object type="image/svg+xml" data={props.avatarSrc} width="48" height="48">
-                              <img src={props.alternativeSrc} width="48" height="48" alt="avatar png"/>
+                            <object type='image/svg+xml' data={props.avatarSrc} width='48' height='48'>
+                              <img src={props.alternativeSrc} width='48' height='48' alt='avatar png'/>
                             </object>
                           );
                         }

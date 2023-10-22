@@ -27,13 +27,11 @@ export const Best = () => {
 
 
                     <FlexWrapper>
-                        <StyledActiveBtn href={'#'}
-                                         content={'Create Now'}
+                        <StyledActiveBtn content={'Create Now'}
                                          className={'create'}/>
 
-                        <StyledBtn href={'#'}
-                                         content={'Learn More'}
-                                         className={'learn'}/>
+                        <StyledBtn content={'Learn More'}
+                                   className={'learn'}/>
                     </FlexWrapper>
             </BestDescription>
 

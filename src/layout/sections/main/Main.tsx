@@ -16,11 +16,9 @@ export const Main = () => {
                     NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital
                     assets with confidence!</StyledText>
                 <FlexWrapper>
-                    <StyledActiveBtn href={'#'}
-                                     content={'Explore Now'}
+                    <StyledActiveBtn content={'Explore Now'}
                                      className={'explore'}/>
-                    <StyledBtn href={"#"}
-                               content={'Learn More'}
+                    <StyledBtn content={'Learn More'}
                                className={'learn'}/>
                 </FlexWrapper>
 
@@ -77,8 +75,7 @@ export const Main = () => {
                             <StyledBidCardText>0.24ETH</StyledBidCardText>
                         </div>
                     </StyledBidBlock>
-                    <StyledOutlinedBtn href={"#"}
-                                       content={'Place A Bid'}
+                    <StyledOutlinedBtn content={'Place A Bid'}
                                        className={'placeBid'}/>
                 </StyledBidCard>
             </FlexWrapper>

@@ -1,22 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 
-type LinkPropsType = {
-    href?: string
-    className: string
-    content?: string
-}
-
 type ButtonPropsType = {
     className: string
     content?: string
 }
-
-export const Link = (props: LinkPropsType) => {
-    return (
-        <a href={props.href || '#'} className={props.className}>{props.content || 'Link'}</a>
-    );
-};
 
 export const Button = (props: ButtonPropsType) => {
     return (
@@ -24,7 +12,7 @@ export const Button = (props: ButtonPropsType) => {
     );
 };
 
-export const StyledActiveBtn = styled(Link) `
+export const StyledActiveBtn = styled(Button) `
   //height: 3.25rem;
   padding: 0.75rem 2.5rem;
   color: #090F1D;
@@ -38,7 +26,7 @@ export const StyledActiveBtn = styled(Link) `
                             text-decoration: none;
 `
 
-export const StyledBtn = styled(Link) `
+export const StyledBtn = styled(Button) `
   padding: 0.75rem 2.5rem;
   color: #FFFFFD;
   font-family: Inter;
@@ -51,7 +39,7 @@ export const StyledBtn = styled(Link) `
   text-decoration: none;
   `
 
-export const StyledOutlinedBtn = styled(Link) `
+export const StyledOutlinedBtn = styled(Button) `
   //height: 3.25rem;
   padding: 0.75rem 2.5rem;
   border-radius: 0.5rem;
