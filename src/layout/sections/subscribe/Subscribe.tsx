@@ -1,12 +1,13 @@
 import React from 'react';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
-import {BestImageBlock, PositionedImage} from "../marketplace/Marketplace";
+import {BestImageBlock} from "../marketplace/Marketplace";
 import styled from "styled-components";
 import subscribeImg_1 from '../../../assets/images/subscribe_1.png';
 import subscribeImg_2 from '../../../assets/images/subscribe_2.png';
 import {StyledText} from "../explore/Explore";
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {Form} from "../../../Components/form/Form";
+import {Image} from "../../sections/explore/Explore";
 
 export const Subscribe = () => {
   return (
@@ -15,24 +16,26 @@ export const Subscribe = () => {
                    align={'center'}>
 
         <SubscribeImageBlock>
-          <PositionedRotatedImage src={subscribeImg_1}
+          <Image src={subscribeImg_1}
                                   alt="updates"
-                                  width={"25.625rem"}
-                                  height={"23.5rem"}
-                                  borderRadius={"1.25rem"}
-                                  backgroundColor={"lightgray -5.732px -51.573px / 100% 136.303%"}
-                                  top={'0'}
-                                  left={'0'}/>
+                                  // width={"25.625rem"}
+                                  // height={"23.5rem"}
+                                  // borderRadius={"1.25rem"}
+                                  // backgroundColor={"lightgray -5.732px -51.573px / 100% 136.303%"}
+                                  // top={'0'}
+                                  // left={'0'}
+          />
 
-              <PositionedImage src={subscribeImg_2}
+              <Image src={subscribeImg_2}
                                alt="updates"
-                               width={"17.625rem"}
-                               height={"21.75rem"}
-                               borderRadius={"1rem"}
-                               backgroundColor={"lightgray 50%"}
-                               bottom={'0'}
-                               right={'0'}
-                               zIndex={'1'}/>
+                               // width={"17.625rem"}
+                               // height={"21.75rem"}
+                               // borderRadius={"1rem"}
+                               // backgroundColor={"lightgray 50%"}
+                               // bottom={'0'}
+                               // right={'0'}
+                               // zIndex={'1'}
+              />
         </SubscribeImageBlock>
 
 
@@ -76,10 +79,10 @@ const SubscribeImageBlock = styled(BestImageBlock) `
   height: 28.63rem;
 `
 
-const PositionedRotatedImage = styled(PositionedImage) `
-  transform: rotate(-11.188deg);
-  transform-origin: 100% 0%;
-`
+// const PositionedRotatedImage = styled(PositionedImage) `
+//   transform: rotate(-11.188deg);
+//   transform-origin: 100% 0%;
+// `
 
 const SubscribeDescription = styled(FlexWrapper) `
   width: 32.5rem;

@@ -5,13 +5,14 @@ import {Collections} from "./layout/sections/collections/Collections";
 import {Marketplace} from "./layout/sections/marketplace/Marketplace";
 import {Artists} from "./layout/sections/artists/Artists";
 import {Subscribe} from "./layout/sections/subscribe/Subscribe";
+import iconsSprite from "./assets/images/icons-sprite.svg";
 
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Explore/>
+            <Explore sprite={iconsSprite}/>
             <Collections/>
             <Marketplace/>
             <Artists/>

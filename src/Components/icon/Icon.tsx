@@ -19,6 +19,8 @@ type IconPropsType = {
             | 'owner_3'
             | 'owner_4'
             | 'owner_5'
+            | 'starBig'
+            | 'starSmall'
     width?: string
     height?: string
     viewBox?: string

@@ -1,9 +1,8 @@
 import React from 'react';
-import {Button} from "../button/Button";
-import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper";
-import {myTheme} from "../../styles/Theme.styled";
-import {Link} from "../link/Link.styled";
+import {Button} from '../button/Button';
+import styled from 'styled-components';
+import {FlexWrapper} from '../FlexWrapper';
+import {myTheme} from '../../styles/Theme.styled';
 
 export const BidCard = () => {
     return (
@@ -30,11 +29,14 @@ export const BidCard = () => {
 const StyledBidCard = styled(FlexWrapper)`
   width: 30.4rem;
   padding: 2rem;
+  position: absolute;
+  top: 46.8rem;
+  right: 0;
   gap: 2.4rem;
   border-radius: 1.6rem;
   border-top: 1px solid ${myTheme.colors.secondary};
   background: ${myTheme.colors.bground};
-  box-shadow: 0px 9px 50px 0px ${myTheme.colors.shadow};
+  box-shadow: 0 0.9rem 5rem 0 ${myTheme.colors.shadow};
   ${Button} {
     width: 100%;
     font-family: Inter, sans-serif;
@@ -61,5 +63,4 @@ const StyledBidBlock = styled(FlexWrapper)`
     font-weight: 700;
     line-height: 120%;
   }
-
 `

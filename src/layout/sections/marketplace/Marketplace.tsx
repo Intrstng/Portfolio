@@ -3,7 +3,7 @@ import {SectionTitle} from "../../../Components/SectionTitle";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import styled from "styled-components";
 import {StyledActiveBtn, StyledBtn} from "../../../Components/button/Button-add";
-import {Image, ImagePropsType, StyledText} from '../explore/Explore';
+import {Image, StyledText} from '../explore/Explore';
 import LogoImg from "../../../assets/images/discover.png";
 import BestImg_1 from "../../../assets/images/create_1.png";
 import BestImg_2 from "../../../assets/images/create_2.png";
@@ -36,24 +36,26 @@ export const Marketplace = () => {
             </BestDescription>
 
             <BestImageBlock>
-                <PositionedImage src={BestImg_1}
+                <Image src={BestImg_1}
                            alt="nft"
-                           width={"25.625rem"}
-                           height={"25rem"}
-                           borderRadius={"1.5rem"}
-                           backgroundColor={"lightgray 0px -16.951px / 100% 125.44%"}
-                           bottom={'0'}
-                           left={'0'}
-                           zIndex={'1'}/>
+                           // width={"25.625rem"}
+                           // height={"25rem"}
+                           // borderRadius={"1.5rem"}
+                           // backgroundColor={"lightgray 0px -16.951px / 100% 125.44%"}
+                           // bottom={'0'}
+                           // left={'0'}
+                           // zIndex={'1'}
+                />
 
-                    <PositionedImage src={BestImg_2}
+                    <Image src={BestImg_2}
                                alt="nft"
-                               width={"25.625rem"}
-                               height={"29.6875rem"}
-                               borderRadius={"1.5rem"}
-                               backgroundColor={"lightgray 50%"}
-                               top={'0'}
-                               right={'0'}/>
+                               // width={"25.625rem"}
+                               // height={"29.6875rem"}
+                               // borderRadius={"1.5rem"}
+                               // backgroundColor={"lightgray 50%"}
+                               // top={'0'}
+                               // right={'0'}
+                    />
             </BestImageBlock>
           </FlexWrapper>
       </StyledBest>
@@ -119,23 +121,23 @@ export const BestImageBlock = styled.div `
 //   background-color: lightgray 0px -11.436px / 100% 127.941%;
 // `
 
-
-type PositionedImagePropsType = ImagePropsType & {
-    top?: string
-    left?: string
-    bottom?: string
-    right?: string
-    zIndex?: string
-}
-
-export const PositionedImage = styled(Image)<PositionedImagePropsType> `
-  position: absolute;
-  top: ${(props) => props.top || 'unset'};
-  left: ${(props) => props.left || 'unset'};
-  bottom: ${(props) => props.bottom || 'unset'};
-  right: ${(props) => props.right || 'unset'};
-  z-index: ${(props) => props.zIndex || '0'};
-                                                          object-fit: cover;
-  //border-radius: 1.5rem;
-  //background-color: lightgray 0px -11.436px / 100% 127.941%;
-`
+                //
+                // type PositionedImagePropsType = ImagePropsType & {
+                //     top?: string
+                //     left?: string
+                //     bottom?: string
+                //     right?: string
+                //     zIndex?: string
+                // }
+                //
+                // export const PositionedImage = styled(Image)<PositionedImagePropsType> `
+                //   position: absolute;
+                //   top: ${(props) => props.top || 'unset'};
+                //   left: ${(props) => props.left || 'unset'};
+                //   bottom: ${(props) => props.bottom || 'unset'};
+                //   right: ${(props) => props.right || 'unset'};
+                //   z-index: ${(props) => props.zIndex || '0'};
+                //                                                           object-fit: cover;
+                //   //border-radius: 1.5rem;
+                //   //background-color: lightgray 0px -11.436px / 100% 127.941%;
+                // `

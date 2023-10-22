@@ -34,12 +34,12 @@ export const Card = (props: AmazingCardPropsType) => {
                  justify={'center'}
                  align={'center'}>
 
-      <Image src={props.source}
-             height={'21.25rem'}
-             width={'23.125rem'}
-             borderRadius={'1rem'}
-             backgroundColor={'lightgray 0px -8.761px / 100% 140.853%'}
-             alt="card image"/>
+      <Image src={props.source} alt="card image"/>
+             {/*height={'21.25rem'}*/}
+             {/*width={'23.125rem'}*/}
+             {/*borderRadius={'1rem'}*/}
+             {/*backgroundColor={'lightgray 0px -8.761px / 100% 140.853%'}*/}
+
 
 
 <CardContent direction={'column'}

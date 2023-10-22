@@ -40,10 +40,10 @@ export const Artists = () => {
 
         <ArtistsCard>
           <Image src={ownerImg_1}
-                 height={'34rem'}
-                 width={'29rem'}
-                 borderRadius={'1.5rem'}
-                 backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                 // height={'34rem'}
+                 // width={'29rem'}
+                 // borderRadius={'1.5rem'}
+                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                  alt="hero"/>
           <AvatarBlock>
             <Avatar avatarSrc={ownerAvatarSvg_1} alternativeSrc={ownerAvatar_1}/>
@@ -56,10 +56,10 @@ export const Artists = () => {
 
         <ArtistsCard>
           <Image src={ownerImg_2}
-                 height={'34rem'}
-                 width={'29rem'}
-                 borderRadius={'1.5rem'}
-                 backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                 // height={'34rem'}
+                 // width={'29rem'}
+                 // borderRadius={'1.5rem'}
+                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                  alt="hero"/>
           <AvatarBlock>
             <Avatar avatarSrc={ownerAvatarSvg_2} alternativeSrc={ownerAvatar_2}/>
@@ -72,10 +72,10 @@ export const Artists = () => {
 
         <ArtistsCard>
           <Image src={ownerImg_3}
-                 height={'100%'}
-                 width={'100%'}
-                 borderRadius={'1.5rem'}
-                 backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                 // height={'100%'}
+                 // width={'100%'}
+                 // borderRadius={'1.5rem'}
+                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                  alt="hero"/>
           <AvatarBlock>
             <Avatar avatarSrc={ownerAvatarSvg_3} alternativeSrc={ownerAvatar_3}/>
@@ -88,10 +88,10 @@ export const Artists = () => {
 
         <ArtistsCard>
           <Image src={ownerImg_4}
-                 height={'34rem'}
-                 width={'29rem'}
-                 borderRadius={'1.5rem'}
-                 backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                 // height={'34rem'}
+                 // width={'29rem'}
+                 // borderRadius={'1.5rem'}
+                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                  alt="hero"/>
           <AvatarBlock>
             <Avatar avatarSrc={ownerAvatarSvg_4} alternativeSrc={ownerAvatar_4}/>
@@ -104,10 +104,10 @@ export const Artists = () => {
 
         <ArtistsCard>
           <Image src={ownerImg_5}
-                 height={'34rem'}
-                 width={'29rem'}
-                 borderRadius={'1.5rem'}
-                 backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                 // height={'34rem'}
+                 // width={'29rem'}
+                 // borderRadius={'1.5rem'}
+                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
                  alt="hero"/>
           <AvatarBlock>
             <Avatar avatarSrc={ownerAvatarSvg_5} alternativeSrc={ownerAvatar_5}/>

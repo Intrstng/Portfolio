@@ -7,6 +7,7 @@ export const myTheme = {
     dark: '#090F1D',
     shadow: 'rgba(23, 36, 65, 0.04)',
     bground: '#131E3A',
+    bgroundLight: '#D3D3D3',
   //   font: '#ABB3BA',
   //   bground: '#f5f5f5',
   //   imgBground: '#d3d3d3',
