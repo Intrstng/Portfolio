@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../Components/SectionTitle";
-import {Image} from "../explore/Explore";
+import {Image} from '../../../Components/image/Image';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import ownerAvatarSvg_1 from '../../../assets/images/owner_1.svg';
 import ownerAvatarSvg_2 from '../../../assets/images/owner_2.svg';
@@ -19,119 +19,120 @@ import ownerImg_2 from "../../../assets/images/popular_2.png";
 import ownerImg_3 from "../../../assets/images/popular_3.png";
 import ownerImg_4 from "../../../assets/images/popular_4.png";
 import ownerImg_5 from "../../../assets/images/popular_5.png";
-import {StyledActiveBtn} from "../../../Components/button/Button-add";
 import {Button} from "../../../Components/button/Button";
+import {ContainerWrapper} from "../../../Components/ContainerWrapper";
 
 
 export const Artists = () => {
-  return (
-    <StyledArtists>
-      <ArtistsTitleBlock justify={'space-between'}
-                         align={'center'}>
-        <SectionTitle>
-          Popular <span>Artists</span> On This Week
-        </SectionTitle>
-        <Button btnType={'primary'}
-                className={'see'} active>See</Button>
+    return (
+        <ContainerWrapper>
+            <StyledArtists>
+                <ArtistsTitleBlock justify={'space-between'}
+                                   align={'center'}>
+                    <SectionTitle>
+                        Popular <span>Artists</span> On This Week
+                    </SectionTitle>
+                    <Button btnType={'primary'}
+                            className={'see'} active>See</Button>
 
-      </ArtistsTitleBlock>
+                </ArtistsTitleBlock>
 
-      <ArtistsGrid>
+                <ArtistsGrid>
 
-        <ArtistsCard>
-          <Image src={ownerImg_1}
-                 // height={'34rem'}
-                 // width={'29rem'}
-                 // borderRadius={'1.5rem'}
-                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
-                 alt="hero"/>
-          <AvatarBlock>
-            <Avatar avatarSrc={ownerAvatarSvg_1} alternativeSrc={ownerAvatar_1}/>
-            <div>
-              <p>Owner</p>
-              <h5>Osvaldo Percy</h5>
-            </div>
-          </AvatarBlock>
-        </ArtistsCard>
+                    <ArtistsCard>
+                        <Image src={ownerImg_1}
+                            // height={'34rem'}
+                            // width={'29rem'}
+                            // borderRadius={'1.5rem'}
+                            // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                               alt="hero"/>
+                        <AvatarBlock>
+                            <Avatar avatarSrc={ownerAvatarSvg_1} alternativeSrc={ownerAvatar_1}/>
+                            <div>
+                                <p>Owner</p>
+                                <h5>Osvaldo Percy</h5>
+                            </div>
+                        </AvatarBlock>
+                    </ArtistsCard>
 
-        <ArtistsCard>
-          <Image src={ownerImg_2}
-                 // height={'34rem'}
-                 // width={'29rem'}
-                 // borderRadius={'1.5rem'}
-                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
-                 alt="hero"/>
-          <AvatarBlock>
-            <Avatar avatarSrc={ownerAvatarSvg_2} alternativeSrc={ownerAvatar_2}/>
-            <div>
-              <p>Owner</p>
-              <h5>Ranson Sqiure</h5>
-            </div>
-          </AvatarBlock>
-        </ArtistsCard>
+                    <ArtistsCard>
+                        <Image src={ownerImg_2}
+                            // height={'34rem'}
+                            // width={'29rem'}
+                            // borderRadius={'1.5rem'}
+                            // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                               alt="hero"/>
+                        <AvatarBlock>
+                            <Avatar avatarSrc={ownerAvatarSvg_2} alternativeSrc={ownerAvatar_2}/>
+                            <div>
+                                <p>Owner</p>
+                                <h5>Ranson Sqiure</h5>
+                            </div>
+                        </AvatarBlock>
+                    </ArtistsCard>
 
-        <ArtistsCard>
-          <Image src={ownerImg_3}
-                 // height={'100%'}
-                 // width={'100%'}
-                 // borderRadius={'1.5rem'}
-                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
-                 alt="hero"/>
-          <AvatarBlock>
-            <Avatar avatarSrc={ownerAvatarSvg_3} alternativeSrc={ownerAvatar_3}/>
-            <div>
-              <p>Owner</p>
-              <h5>Cristio leo</h5>
-            </div>
-          </AvatarBlock>
-        </ArtistsCard>
+                    <ArtistsCard>
+                        <Image src={ownerImg_3}
+                            // height={'100%'}
+                            // width={'100%'}
+                            // borderRadius={'1.5rem'}
+                            // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                               alt="hero"/>
+                        <AvatarBlock>
+                            <Avatar avatarSrc={ownerAvatarSvg_3} alternativeSrc={ownerAvatar_3}/>
+                            <div>
+                                <p>Owner</p>
+                                <h5>Cristio leo</h5>
+                            </div>
+                        </AvatarBlock>
+                    </ArtistsCard>
 
-        <ArtistsCard>
-          <Image src={ownerImg_4}
-                 // height={'34rem'}
-                 // width={'29rem'}
-                 // borderRadius={'1.5rem'}
-                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
-                 alt="hero"/>
-          <AvatarBlock>
-            <Avatar avatarSrc={ownerAvatarSvg_4} alternativeSrc={ownerAvatar_4}/>
-            <div>
-              <p>Owner</p>
-              <h5>Sebastian waltan</h5>
-            </div>
-          </AvatarBlock>
-        </ArtistsCard>
+                    <ArtistsCard>
+                        <Image src={ownerImg_4}
+                            // height={'34rem'}
+                            // width={'29rem'}
+                            // borderRadius={'1.5rem'}
+                            // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                               alt="hero"/>
+                        <AvatarBlock>
+                            <Avatar avatarSrc={ownerAvatarSvg_4} alternativeSrc={ownerAvatar_4}/>
+                            <div>
+                                <p>Owner</p>
+                                <h5>Sebastian waltan</h5>
+                            </div>
+                        </AvatarBlock>
+                    </ArtistsCard>
 
-        <ArtistsCard>
-          <Image src={ownerImg_5}
-                 // height={'34rem'}
-                 // width={'29rem'}
-                 // borderRadius={'1.5rem'}
-                 // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
-                 alt="hero"/>
-          <AvatarBlock>
-            <Avatar avatarSrc={ownerAvatarSvg_5} alternativeSrc={ownerAvatar_5}/>
-            <div>
-              <p>Owner</p>
-              <h5>Abraham Zack</h5>
-            </div>
-          </AvatarBlock>
-        </ArtistsCard>
-
-
-      </ArtistsGrid>
+                    <ArtistsCard>
+                        <Image src={ownerImg_5}
+                            // height={'34rem'}
+                            // width={'29rem'}
+                            // borderRadius={'1.5rem'}
+                            // backgroundColor={'lightgray 0px -11.436px / 100% 127.941%'}
+                               alt="hero"/>
+                        <AvatarBlock>
+                            <Avatar avatarSrc={ownerAvatarSvg_5} alternativeSrc={ownerAvatar_5}/>
+                            <div>
+                                <p>Owner</p>
+                                <h5>Abraham Zack</h5>
+                            </div>
+                        </AvatarBlock>
+                    </ArtistsCard>
 
 
-    </StyledArtists>
-  );
+                </ArtistsGrid>
+
+
+            </StyledArtists>
+        </ContainerWrapper>
+    );
 };
 
 const StyledArtists = styled.section`
   //display: inline-flex;
   margin: 0 auto;
-  padding: 5.75rem 6.9375rem;
-  width: 94.5rem;
-  background-color: #090F1D;
+  padding: 11rem 0;
+
   //justify-content: center;
   //align-items: center;
   //gap: 7.75rem;

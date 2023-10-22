@@ -16,7 +16,7 @@ function App() {
             <Collections/>
             <Marketplace/>
             <Artists/>
-            <Subscribe/>
+            {/*<Subscribe/>*/}
         </div>
     );
 }

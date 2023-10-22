@@ -9,6 +9,7 @@ import {BidCard} from "../../../Components/card/BidCard";
 import {Link} from "../../../Components/link/Link.styled";
 import {Counter} from "../../../Components/counter/Counter";
 import {Icon} from "../../../Components/icon/Icon";
+import {Image} from '../../../Components/image/Image';
 
 type ExplorePropsType = {
     sprite: string
@@ -99,17 +100,6 @@ const ExploreImageBlock = styled.div `
     left: 0;
     z-index: 1;
   }
-`
-
-export const Image = styled.img`
-  width: 46.4rem;
-  height: 54.4rem;
-  position: absolute;
-  top: 0;
-  right: 5rem;
-  border-radius: 2.4rem;
-  background-color: ${myTheme.colors.bgroundLight} 0 -11rem / 100% 128%;
-  //object-fit: cover;
 `
 
 

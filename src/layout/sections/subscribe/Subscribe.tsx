@@ -1,13 +1,13 @@
 import React from 'react';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
-import {BestImageBlock} from "../marketplace/Marketplace";
+import {MarketplaceImageBlock} from "../marketplace/Marketplace";
 import styled from "styled-components";
 import subscribeImg_1 from '../../../assets/images/subscribe_1.png';
 import subscribeImg_2 from '../../../assets/images/subscribe_2.png';
 import {StyledText} from "../explore/Explore";
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {Form} from "../../../Components/form/Form";
-import {Image} from "../../sections/explore/Explore";
+import {Image} from "../../../Components/image/Image";
 
 export const Subscribe = () => {
   return (
@@ -74,7 +74,7 @@ const StyledSubscribe = styled.section `
   //gap: 7.75rem;
 `
 
-const SubscribeImageBlock = styled(BestImageBlock) `
+const SubscribeImageBlock = styled(MarketplaceImageBlock) `
   width: 39.375rem;
   height: 28.63rem;
 `
