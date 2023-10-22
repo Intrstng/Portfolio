@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {myTheme} from '../../styles/Theme.styled.';
+import {myTheme} from '../../styles/Theme.styled';
 
 export const Menu = () => {
     return (
@@ -21,7 +21,7 @@ const StyledMenu = styled.nav `
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    width: 48rem;
+    width: 43rem;
     gap: 4.1rem;
     list-style-type: none;
   }

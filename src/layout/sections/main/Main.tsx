@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import LogoImg from '../../../assets/images/discover.png';
 import {FlexWrapper} from "../../../Components/FlexWrapper";
-import {StyledBtn, StyledActiveBtn, StyledOutlinedBtn} from "../../../Components/button/Button";
+import {StyledBtn, StyledActiveBtn, StyledOutlinedBtn} from "../../../Components/button/Button-add";
 
 export const Main = () => {
     return (

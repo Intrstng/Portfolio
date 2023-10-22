@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledSubmitBtn} from "../button/Button";
+import {StyledSubmitBtn} from "../button/Button-add";
 import styled from "styled-components";
 
 export const Form = () => {

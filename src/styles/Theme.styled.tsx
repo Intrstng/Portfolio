@@ -4,7 +4,7 @@ export const myTheme = {
     primary: '#FFFFFD',
     fontLight: 'rgba(255, 255, 253, 0.72)',
     secondary: '#D3F85A',
-    bground: '#090F1D',
+    dark: '#090F1D',
 
   //   font: '#ABB3BA',
   //   bground: '#f5f5f5',

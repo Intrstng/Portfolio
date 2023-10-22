@@ -19,7 +19,7 @@ import ownerImg_2 from "../../../assets/images/popular_2.png";
 import ownerImg_3 from "../../../assets/images/popular_3.png";
 import ownerImg_4 from "../../../assets/images/popular_4.png";
 import ownerImg_5 from "../../../assets/images/popular_5.png";
-import {StyledActiveBtn} from "../../../Components/button/Button";
+import {StyledActiveBtn} from "../../../Components/button/Button-add";
 
 
 export const Artists = () => {

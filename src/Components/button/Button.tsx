@@ -1,73 +1,49 @@
-import React from 'react';
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
+import {myTheme} from '../../styles/Theme.styled';
 
 type ButtonPropsType = {
-    className: string
-    content?: string
+    btnType?: 'primary' | 'outlined'
+    active?: boolean
 }
 
-export const Button = (props: ButtonPropsType) => {
-    return (
-      <button className={props.className}>{props.content || 'Submit'}</button>
-    );
-};
-
-export const StyledActiveBtn = styled(Button) `
-  //height: 3.25rem;
-  padding: 0.75rem 2.5rem;
-  color: #090F1D;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  border-radius: 0.5rem;
-  background-color: #D3F85A;
-                            text-decoration: none;
-`
-
-export const StyledBtn = styled(Button) `
-  padding: 0.75rem 2.5rem;
-  color: #FFFFFD;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  `
-
-export const StyledOutlinedBtn = styled(Button) `
-  //height: 3.25rem;
-  padding: 0.75rem 2.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #D3F85A;
-  color: #D3F85A;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  text-decoration: none;
-`
-
-export const StyledSubmitBtn = styled(Button) `
-  //height: 3.25rem;
-  padding: 0.75rem 2.5rem;
-  color: #090F1D;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.2rem;
-  border-radius: 0.5rem;
-  border: none;
-  background-color: #D3F85A;
+export const Button = styled.button<ButtonPropsType>`
+  padding: 1.2rem 4rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 120%;
+  transition: 0.3s transform ease-in-out,
+              0.3s color ease-in-out;
   cursor: pointer;
-`
-
-
-
-
+  &:hover {
+    transform: scale(1.03);
+  }
+  ${props => props.btnType === 'primary' && css<ButtonPropsType> `
+    background: transparent;
+    color: ${myTheme.colors.primary};
+    border: none;
+    &:hover {
+      background: ${myTheme.colors.secondary};
+      color: ${myTheme.colors.dark};
+      border: none;
+    }
+  `};
+  ${props => props.btnType === 'outlined' && css<ButtonPropsType> `
+    background: transparent;
+    color: ${myTheme.colors.secondary};
+    border-radius: 0.8rem;
+    border: 1px solid ${myTheme.colors.secondary};
+    font-size: 1rem;
+    font-weight: bold;
+    &:hover {
+      background: ${myTheme.colors.secondary};
+      color: ${myTheme.colors.dark};
+      border: none;
+    }
+  `};
+  ${props => props.btnType === 'primary' && props.active && css<ButtonPropsType> `
+      background: ${myTheme.colors.secondary};
+      color: ${myTheme.colors.dark};
+      border: none;
+  `};
+`;

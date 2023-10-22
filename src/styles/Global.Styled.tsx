@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import {myTheme} from "./Theme.styled.";
+import {myTheme} from "./Theme.styled";
 // import myTheme from './Theme.styled.';
 
 export const GlobalStyled = createGlobalStyle `
@@ -14,7 +14,7 @@ export const GlobalStyled = createGlobalStyle `
     font-size: 10px;
   }
   body {
-    background-color: ${myTheme.colors.bground};
+    background-color: ${myTheme.colors.dark};
     color: ${myTheme.colors.primary};
     font-family: Inter, sans-serif;
     font-style: normal;

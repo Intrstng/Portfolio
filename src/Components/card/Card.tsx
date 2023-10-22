@@ -8,7 +8,7 @@ import {Icon} from "../icon/Icon";
 import arrowsSvgIcon from '../../assets/images/arrows.svg';
 import clockSvgIcon from '../../assets/images/clock.svg';
 import LogoImg from "../../assets/images/discover.png";
-import {StyledOutlinedBtn} from "../button/Button";
+import {StyledOutlinedBtn} from "../button/Button-add";
 const arrowIcon = <Icon iconId={'arrows'}
                         width={'24'}
                         height={'25'}

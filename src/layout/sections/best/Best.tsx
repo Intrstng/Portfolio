@@ -2,7 +2,7 @@ import React from 'react';
 import {SectionTitle} from "../../../Components/SectionTitle";
 import {FlexWrapper} from "../../../Components/FlexWrapper";
 import styled from "styled-components";
-import {StyledActiveBtn, StyledBtn} from "../../../Components/button/Button";
+import {StyledActiveBtn, StyledBtn} from "../../../Components/button/Button-add";
 import {Image, ImagePropsType, StyledText} from '../main/Main';
 import LogoImg from "../../../assets/images/discover.png";
 import BestImg_1 from "../../../assets/images/create_1.png";

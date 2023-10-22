@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Logo} from '../../Components/logo/Logo';
 import {Menu} from '../../Components/menu/menu';
-import {StyledActiveBtn} from '../../Components/button/Button';
+import {Button} from '../../Components/button/Button';
 import iconsSprite from '../../assets/images/icons-sprite.svg';
 import {ContainerWrapper} from '../../Components/ContainerWrapper';
 
@@ -13,8 +13,8 @@ export const Header = () => {
             <StyledHeader>
                 <Logo sprite={iconsSprite}/>
                 <Menu/>
-                <StyledActiveBtn content={'Contact'}
-                                 className={'contact'}/>
+                <Button className={'contact'}
+                        btnType={'primary'} active>Contact</Button>
             </StyledHeader>
         </ContainerWrapper>
 

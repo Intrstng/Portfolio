@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Icon} from '../icon/Icon';
-import {myTheme} from '../../styles/Theme.styled.';
+import {myTheme} from '../../styles/Theme.styled';
 
 type LogoPropsType = {
   sprite: string
