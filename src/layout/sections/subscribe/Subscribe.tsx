@@ -47,7 +47,7 @@ export const Subscribe = () => {
 
 const StyledSubscribe = styled.section `
   margin: 0 auto;
-  padding: 5.75rem 0;
+  padding: 7.5rem 0;
 `
 
 const SubscribeImageBlock = styled(MarketplaceImageBlock) `

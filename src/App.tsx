@@ -15,7 +15,7 @@ function App() {
             <Explore sprite={iconsSprite}/>
             <Collections/>
             <Marketplace/>
-            {/*<Artists/>*/}
+            <Artists/>
             <Subscribe/>
         </div>
     );

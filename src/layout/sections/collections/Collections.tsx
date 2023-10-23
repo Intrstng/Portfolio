@@ -15,7 +15,8 @@ export const Collections = () => {
         <ContainerWrapper>
             <StyledCollections>
                 <CollectionsTitleBlock justify={'space-between'}
-                                       align={'flex-end'}>
+                                       align={'flex-end'}
+                                       wrap={'wrap'}>
                     <SectionTitle>
                         <span>Amazing</span> and Super
                         Unique Art of This <span>Week</span>
@@ -23,27 +24,27 @@ export const Collections = () => {
                     <Button as={Link} href={'#'} target={'_blank'}
                             btnType={'primary'}
                             className={'see'} active>See All</Button>
+
+
+                    <CardWrapper justify={'space-between'}
+                                 align={'flex-start'}>
+                        <Card source={cardImg_1}
+                              title={'Cyberpunk Cocomo'}
+                              price={490}
+                              time={'03:24:56'}
+                              btnClassName={'placeBid_1'}/>
+                        <Card source={cardImg_2}
+                              title={'Charge, Qi tiao yu'}
+                              price={490}
+                              time={'03:24:56'}
+                              btnClassName={'placeBid_2'}/>
+                        <Card source={cardImg_3}
+                              title={'Surgeon, Josh Rife'}
+                              price={490}
+                              time={'03:24:56'}
+                              btnClassName={'placeBid_3'}/>
+                    </CardWrapper>
                 </CollectionsTitleBlock>
-
-                <FlexWrapper justify={'space-between'}
-                             align={'flex-start'}>
-                    <Card source={cardImg_1}
-                          title={'Cyberpunk Cocomo'}
-                          price={490}
-                          time={'03:24:56'}
-                          btnClassName={'placeBid_1'}/>
-                    <Card source={cardImg_2}
-                          title={'Charge, Qi tiao yu'}
-                          price={490}
-                          time={'03:24:56'}
-                          btnClassName={'placeBid_2'}/>
-                    <Card source={cardImg_3}
-                          title={'Surgeon, Josh Rife'}
-                          price={490}
-                          time={'03:24:56'}
-                          btnClassName={'placeBid_3'}/>
-                </FlexWrapper>
-
             </StyledCollections>
         </ContainerWrapper>
     );
@@ -55,7 +56,10 @@ const StyledCollections = styled.section`
   gap: 4rem;
 `
 
-const CollectionsTitleBlock = styled(FlexWrapper)`
-  margin-bottom: 6.2rem;
+const CollectionsTitleBlock = styled(FlexWrapper) `
+  //margin-bottom: 6.2rem;
+  gap: 6rem;
 `
-
+const CardWrapper = styled(FlexWrapper) `
+    width: 100%;
+`

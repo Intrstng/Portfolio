@@ -51,10 +51,11 @@ const CardContainer = styled.div`
   padding: 2rem;
   border-radius: 2.8rem;
   border-top: 1px solid ${myTheme.colors.secondary};
+  background-color: ${myTheme.colors.bground};
 `
 
 const CardDescription = styled(FlexWrapper) `
-  margin: 2rem 0 2rem;
+  margin: 2.4rem 0 1.8rem;
   width: 100%;
   color: ${myTheme.colors.primary};
   font-family: Inter, sans-serif;
