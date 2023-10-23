@@ -6,6 +6,7 @@ import {Marketplace} from './layout/sections/marketplace/Marketplace';
 import {Artists} from './layout/sections/artists/Artists';
 import {Subscribe} from './layout/sections/subscribe/Subscribe';
 import iconsSprite from './assets/images/icons-sprite.svg';
+import {Footer} from './layout/footer/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Marketplace/>
             <Artists/>
             <Subscribe/>
+            <Footer sprite={iconsSprite}/>
         </div>
     );
 }

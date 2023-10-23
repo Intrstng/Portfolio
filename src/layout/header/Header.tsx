@@ -8,7 +8,6 @@ import {ContainerWrapper} from '../../Components/ContainerWrapper';
 import {Link} from "../../Components/link/Link.styled";
 
 export const Header = () => {
-
     return (
         <ContainerWrapper>
             <StyledHeader>
@@ -19,7 +18,6 @@ export const Header = () => {
                         btnType={'primary'} active>Contact</Button>
             </StyledHeader>
         </ContainerWrapper>
-
     )
 };
 
