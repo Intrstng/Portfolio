@@ -75,17 +75,17 @@ export const MarketplaceImageBlock = styled.div`
   ${Image}:nth-child(1) {
     width: 41rem;
     height: 40rem;
-    border-radius: 2.4rem;
-    background-color: ${myTheme.colors.bgroundLight} 0 -1.6rem / 100% 125%;
-    top: 15.8rem;
+                            border-radius: 2.4rem;
+                            background-color: ${myTheme.colors.bgroundLight} 0 -1.6rem / 100% 125%;
+    bottom: 0;
     left: 0;
     z-index: 1;
   }
   ${Image}:nth-child(2) {
     width: 41rem;
     height: 47.5rem;
-    border-radius: 2.4rem;
-    background-color: ${myTheme.colors.bgroundLight} 50%;
+                            border-radius: 2.4rem;
+                            background-color: ${myTheme.colors.bgroundLight} 50%;
     top: 0;
     right: 0;
     z-index: 0;

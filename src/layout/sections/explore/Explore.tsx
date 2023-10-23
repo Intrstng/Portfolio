@@ -36,7 +36,7 @@ export const Explore = (props: ExplorePropsType) => {
                 </ExploreDescription>
 
                 <ExploreImageBlock>
-                    <Image src={LogoImg} alt="hero"/>
+                    <Image src={LogoImg} alt='hero'/>
                     <BidCard/>
                     <Icon iconId={'starBig'}
                           width={'172'}
@@ -87,13 +87,13 @@ export const StyledText = styled.p `
     line-height: 160%;
 `
 
-
-
-
-
 const ExploreImageBlock = styled.div `
   position: relative;
   width: 57.4rem;
+  ${Image} {
+    top: 0;
+    right: 5rem;
+  }
   svg {
     position: absolute;
     top: 22.3rem;

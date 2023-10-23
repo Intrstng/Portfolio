@@ -1,13 +1,14 @@
 import React from 'react';
-import {StyledSubmitBtn} from "../button/Button-add";
-import styled from "styled-components";
-import {Button} from "../button/Button";
+import styled from 'styled-components';
+import {Button} from '../button/Button';
+import {myTheme} from '../../styles/Theme.styled';
 
 export const Form = () => {
   return (
     <StyledForm>
-      <input type="text" placeholder="Enter your e-mail" required/>
+      <input type='text' placeholder='Enter your e-mail' required/>
         <Button btnType={'primary'}
+                type={'submit'}
                 className={'subscribe'} active>Subscribe</Button>
     </StyledForm>
   );
@@ -17,34 +18,32 @@ const StyledForm = styled.form `
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  width: 32.25rem;
-  height: 3.75rem;
-  background: #131E3A;
+  width: 51.6rem;
+  height: 6rem;
+  padding-right: 0.4rem;
+  border-radius: 0.8rem;
+  background: ${myTheme.colors.bground};
   input {
-    height: 3.75rem;
+    height: 6rem;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 1.6rem 2.4rem;
     -webkit-appearance: none;
-    outline: none;
     border: none;
-    border-radius: 0.5rem;
-    background: #131E3A;
-    color: #FFFFFD;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
+    background: ${myTheme.colors.bground};
+    color: ${myTheme.colors.primary};
+    font-family: Inter, sans-serif;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 160%;
+    outline: none;
+    border-radius: 0.8rem;
+    &:focus {
+      background: ${myTheme.colors.bgroundLight};
+    }
     &::-webkit-input-placeholder,
     &::-moz-placeholder,
     &::-ms-input-placeholder {
-      color: #FFFFFDB8;
-      //font-family: Inter;
-      //font-size: 1rem;
-      //font-style: normal;
-      //font-weight: 400;
-      //line-height: 1.6rem;
+      color: ${myTheme.colors.primary};
     }
   }
 `
