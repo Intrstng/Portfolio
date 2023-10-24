@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import {Link} from '../link/Link.styled';
 import {myTheme} from '../../styles/Theme.styled';
 
-
 export const Copyright = () => {
     return (
         <CopyrightWrapper justify={'space-between'}
@@ -43,5 +42,9 @@ const PrivacyWrapper = styled(FlexWrapper) `
     font-weight: normal;
     line-height: 160%;
     color: ${myTheme.colors.primary};
+    transition: 0.3s color ease-in-out;
+    &:hover {
+      color: ${myTheme.colors.secondary};
+    }
   }
 `

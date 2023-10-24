@@ -7,8 +7,6 @@ import {Button} from '../button/Button';
 import {Link} from '../link/Link.styled';
 import {myTheme} from "../../styles/Theme.styled";
 import {CardImage} from '../../Components/image/Image';
-import spriteSvg from '../../assets/images/icons-sprite.svg';
-import {Icon} from '../icon/Icon';
 
 type CardPropsType = {
     source: string

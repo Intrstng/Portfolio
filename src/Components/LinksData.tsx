@@ -1,4 +1,12 @@
-import {LinksListPropsType} from './linksList/LinksList';
+type LinksObjectType = {
+    to: string
+    name: string
+}
+
+export type LinksListPropsType = {
+    title: string
+    links: LinksObjectType[]
+}
 
 export const navExplore: LinksListPropsType = {
     title: 'Explore',

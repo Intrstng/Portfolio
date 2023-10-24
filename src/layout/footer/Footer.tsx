@@ -53,10 +53,8 @@ export const Footer = () => {
     );
 };
 
-
-
 const StyledFooter = styled.footer `
-  
+  margin-bottom: 9rem;
 `
 
 const LinksContainer = styled.div `

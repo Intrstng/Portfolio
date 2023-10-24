@@ -1,5 +1,5 @@
 import React from 'react';
-import {CardImage} from "./image/Image";
+import {CardImage} from './image/Image';
 import ownerImg_1 from '../assets/images/popular_1.png';
 import {Avatar} from './logo/Logo';
 import ownerAvatarSvg_1 from '../assets/images/owner_1.svg';
@@ -19,6 +19,7 @@ import ownerAvatar_5 from '../assets/images/owner_5.png';
 import styled from 'styled-components';
 import {FlexWrapper} from './FlexWrapper';
 import {myTheme} from '../styles/Theme.styled';
+import {Link} from './link/Link.styled';
 
 export const ArtistsGrid = () => {
     return (
@@ -89,8 +90,10 @@ const Grid = styled.div`
   gap: 3rem;
 `
 
-const ArtistsCard = styled.div`
+const ArtistsCard = styled(Link)`
   position: relative;
+  cursor: pointer;
+  transition: 0.3s transform ease-in-out;
   &:nth-child(1) {
     grid-column: 1 / 4;
     grid-row: 1;
@@ -111,12 +114,14 @@ const ArtistsCard = styled.div`
     grid-column: 5 / 9;
     grid-row: 2;
   }
-
   ${CardImage} {
     width: 100%;
     height: 100%;
     border-radius: 1.5rem;
     background-color: ${myTheme.colors.bgroundLight} 0 -1.1rem/ 100% 128%;
+  }
+  &:hover {
+    transform: scale(1.02);
   }
 `
 

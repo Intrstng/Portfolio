@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from '../link/Link.styled';
-import {Icon} from "../icon/Icon";
+import {Icon} from '../icon/Icon';
 
 type SocialLinkPropsType = {
     link: string
