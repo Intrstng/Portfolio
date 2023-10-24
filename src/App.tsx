@@ -18,7 +18,7 @@ function App() {
             <Marketplace/>
             <Artists/>
             <Subscribe/>
-            <Footer sprite={iconsSprite}/>
+            <Footer/>
         </div>
     );
 }

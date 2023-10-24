@@ -21,7 +21,7 @@ const StyledMenu = styled.nav `
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    width: 43rem;
+    width: 47rem;
     gap: 4.1rem;
     list-style-type: none;
   }

@@ -21,7 +21,7 @@ export const Header = () => {
     )
 };
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.header `
   padding: 1.6rem 0 0;
   height: 9rem;
   display: flex;
