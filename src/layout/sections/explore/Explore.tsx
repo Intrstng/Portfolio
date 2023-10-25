@@ -17,54 +17,56 @@ type ExplorePropsType = {
 
 export const Explore = (props: ExplorePropsType) => {
     return (
-        <ContainerWrapper>
-            <StyledExplore>
-                <ExploreDescription>
-                    <h2>Discover and Collect The Best NFTs <span>Digital Art.</span></h2>
-                    <StyledText>Get started with the easiest and most secure platform to buy and trade digital ART and
-                        NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital
-                        assets with confidence!</StyledText>
+        <section>
+            <ContainerWrapper>
+                <StyledExplore justify={'space-between'}
+                               align={'flex-start'}
+                               wrap={'wrap'}>
+                    <ExploreDescription>
+                        <h2>Discover and Collect The Best NFTs <span>Digital Art.</span></h2>
+                        <StyledText>Get started with the easiest and most secure platform to buy and trade digital ART
+                            and
+                            NFT’s. Start exploring the world of digital art and NFTs today and take control of your
+                            digital
+                            assets with confidence!</StyledText>
 
                         <FlexWrapper>
-                            <Button as={ Link } href={'#'} target={'_blank'}
+                            <Button as={Link} href={'#'} target={'_blank'}
                                     className={'explore'}
                                     btnType={'primary'} active>Explore Now</Button>
-                            <Button as={ Link } href={'#'} target={'_blank'}
+                            <Button as={Link} href={'#'} target={'_blank'}
                                     className={'learn'}
                                     btnType={'primary'}>Learn More</Button>
                         </FlexWrapper>
-                </ExploreDescription>
+                    </ExploreDescription>
 
-                <ExploreImageBlock>
-                    <Image src={LogoImg} alt='hero'/>
-                    <BidCard/>
-                    <Icon iconId={'starBig'}
-                          width={'172'}
-                          height={'172'}
-                          viewBox={'0 0 172 172'}
-                          source={props.sprite}/>
-                </ExploreImageBlock>
+                    <ExploreImageBlock>
+                        <Image src={LogoImg} alt='hero'/>
+                        <BidCard/>
+                        <Icon iconId={'starBig'}
+                              width={'172'}
+                              height={'172'}
+                              viewBox={'0 0 172 172'}
+                              source={props.sprite}/>
+                    </ExploreImageBlock>
 
-                <Counter/>
-            </StyledExplore>
-        </ContainerWrapper>
-
+                    <Counter/>
+                </StyledExplore>
+            </ContainerWrapper>
+        </section>
     );
 };
 
 
-const StyledExplore = styled.section `
+const StyledExplore = styled(FlexWrapper)`
   padding: 10.6rem 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
   row-gap: 8.5rem;
 `
 
 const ExploreDescription = styled.div`
   width: 54.4rem;
+
   h2 {
     margin: 2.6rem 0 2.2rem;
     color: ${myTheme.colors.primary};
@@ -72,28 +74,31 @@ const ExploreDescription = styled.div`
     font-size: 6.4rem;
     font-weight: 500;
     line-height: 7.7rem;
+
     span {
       color: ${myTheme.colors.secondary};
     }
   }
 `
 
-export const StyledText = styled.p `
+export const StyledText = styled.p`
   margin-bottom: 4.2rem;
-    color: ${myTheme.colors.primary};
-    font-family: Inter, sans-serif;
-    font-size: 1.6rem;
-    font-weight: normal;
-    line-height: 160%;
+  color: ${myTheme.colors.primary};
+  font-family: Inter, sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 160%;
 `
 
-const ExploreImageBlock = styled.div `
+const ExploreImageBlock = styled.div`
   position: relative;
   width: 57.4rem;
+
   ${Image} {
     top: 0;
     right: 5rem;
   }
+
   svg {
     position: absolute;
     top: 22.3rem;
