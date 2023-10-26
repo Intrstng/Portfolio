@@ -11,55 +11,49 @@ import {Link} from '../../../Components/link/Link.styled';
 import {ContainerWrapper} from '../../../Components/ContainerWrapper';
 
 export const Collections = () => {
-    return (
-        <ContainerWrapper>
-            <StyledCollections>
-                <CollectionsTitleBlock justify={'space-between'}
-                                       align={'flex-end'}
-                                       wrap={'wrap'}>
-                    <SectionTitle>
-                        <span>Amazing</span> and Super
-                        Unique Art of This <span>Week</span>
-                    </SectionTitle>
-                    <Button as={Link} href={'#'} target={'_blank'}
-                            btnType={'primary'}
-                            className={'see'} active>See All</Button>
+  return (
+    <section>
+      <ContainerWrapper>
+        <CollectionsTitleBlock justify={'space-between'}
+                               align={'flex-end'}
+                               wrap={'wrap'}>
+          <SectionTitle>
+            <span>Amazing</span> and Super
+            Unique Art of This <span>Week</span>
+          </SectionTitle>
+          <Button as={Link} href={'#'} target={'_blank'}
+                  btnType={'primary'}
+                  className={'see'} active>See All</Button>
 
-
-                    <CardWrapper justify={'space-between'}
-                                 align={'flex-start'}>
-                        <Card source={cardImg_1}
-                              title={'Cyberpunk Cocomo'}
-                              price={490}
-                              time={'03:24:56'}
-                              btnClassName={'placeBid_1'}/>
-                        <Card source={cardImg_2}
-                              title={'Charge, Qi tiao yu'}
-                              price={490}
-                              time={'03:24:56'}
-                              btnClassName={'placeBid_2'}/>
-                        <Card source={cardImg_3}
-                              title={'Surgeon, Josh Rife'}
-                              price={490}
-                              time={'03:24:56'}
-                              btnClassName={'placeBid_3'}/>
-                    </CardWrapper>
-                </CollectionsTitleBlock>
-            </StyledCollections>
-        </ContainerWrapper>
-    );
+          <CardWrapper justify={'space-between'}
+                       align={'flex-start'}>
+            <Card source={cardImg_1}
+                  title={'Cyberpunk Cocomo'}
+                  price={490}
+                  time={'03:24:56'}
+                  btnClassName={'placeBid_1'}/>
+            <Card source={cardImg_2}
+                  title={'Charge, Qi tiao yu'}
+                  price={490}
+                  time={'03:24:56'}
+                  btnClassName={'placeBid_2'}/>
+            <Card source={cardImg_3}
+                  title={'Surgeon, Josh Rife'}
+                  price={490}
+                  time={'03:24:56'}
+                  btnClassName={'placeBid_3'}/>
+          </CardWrapper>
+        </CollectionsTitleBlock>
+      </ContainerWrapper>
+    </section>
+  );
 };
 
-const StyledCollections = styled.section`
+const CollectionsTitleBlock = styled(FlexWrapper)`
   margin: 0 auto;
   padding: 10.5rem 0;
-  gap: 4rem;
-`
-
-const CollectionsTitleBlock = styled(FlexWrapper) `
-  //margin-bottom: 6.2rem;
   gap: 6rem;
 `
-const CardWrapper = styled(FlexWrapper) `
-    width: 100%;
+const CardWrapper = styled(FlexWrapper)`
+  width: 100%;
 `
