@@ -8,7 +8,7 @@ import {Counter} from '../../../Components/counter/Counter';
 import {Icon} from '../../../Components/icon/Icon';
 import {Image} from '../../../Components/image/Image';
 import {S} from './Explore_Styles';
-import {StyledText} from './Explore_Styles';
+import {StyledText} from '../../../Components/StyledText';
 import {I} from '../../../Components/Images';
 
 type ExplorePropsType = {

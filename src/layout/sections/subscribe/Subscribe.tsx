@@ -21,8 +21,8 @@ export const Subscribe: React.FC = () => {
                     </S.SubscribeImageBlock>
 
                     <S.SubscribeDescription direction={'column'}
-                                          justify={'flex-start'}
-                                          align={'flex-start'}>
+                                            justify={'flex-start'}
+                                            align={'flex-start'}>
                         <S.SubscribeTitle>
                             Subscribe And <span>get our Updates</span> Every Week
                         </S.SubscribeTitle>

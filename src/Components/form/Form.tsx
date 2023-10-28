@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from '../button/Button';
-import { S } from './Form_Styles';
+import {S} from './Form_Styles';
 
 export const Form: React.FC = () => {
   return (

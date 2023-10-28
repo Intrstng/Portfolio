@@ -1,3 +1,5 @@
+// Footer navigation
+
 type LinksObjectType = {
     to: string
     name: string

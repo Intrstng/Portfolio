@@ -13,6 +13,7 @@ export const GlobalStyled = createGlobalStyle `
     font-size: 10px;
   }
   body {
+    min-width: 375px;
     background-color: ${myTheme.colors.dark};
     color: ${myTheme.colors.primary};
     font-family: Inter, sans-serif;
