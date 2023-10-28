@@ -1,14 +1,12 @@
 import React from 'react';
 import {Button} from '../button/Button';
-import styled from 'styled-components';
-import {FlexWrapper} from '../FlexWrapper';
-import {myTheme} from '../../styles/Theme.styled';
+import {S} from './BidCard_Styles';
 
-export const BidCard = () => {
+export const BidCard: React.FC = () => {
     return (
-        <StyledBidCard direction={'column'}
+        <S.BidCard direction={'column'}
                        align={'center'}>
-            <StyledBidBlock justify={'space-between'}
+            <S.BidBlock justify={'space-between'}
                             align={'flex-start'}>
                 <div>
                     <h4>Ends in</h4>
@@ -19,48 +17,9 @@ export const BidCard = () => {
                     <h4>Current bid</h4>
                     <p>0.24ETH</p>
                 </div>
-            </StyledBidBlock>
+            </S.BidBlock>
             <Button className={'placeBid'}
                     btnType={'outlined'}>Place A Bid</Button>
-        </StyledBidCard>
+        </S.BidCard>
     );
 };
-
-const StyledBidCard = styled(FlexWrapper)`
-  width: 30.4rem;
-  padding: 2rem;
-  position: absolute;
-  top: 46.8rem;
-  right: 0;
-  gap: 2.4rem;
-  border-radius: 1.6rem;
-  border-top: 1px solid ${myTheme.colors.secondary};
-  background: ${myTheme.colors.bground};
-  box-shadow: 0 0.9rem 5rem 0 ${myTheme.colors.shadow};
-  ${Button} {
-    width: 100%;
-    font-family: Inter, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-`
-
-const StyledBidBlock = styled(FlexWrapper)`
-  width: 100%;
-  h4 {
-    margin-bottom: 0.8rem;
-    color: ${myTheme.colors.secondary};
-    font-family: Inter, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 160%;
-  }
-  p {
-    color: ${myTheme.colors.primary};
-    font-family: Inter, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-`

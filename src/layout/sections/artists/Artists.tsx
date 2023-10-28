@@ -1,16 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
 import {SectionTitle} from '../../../Components/SectionTitle';
-import {FlexWrapper} from '../../../Components/FlexWrapper';
 import {Button} from '../../../Components/button/Button';
 import {ContainerWrapper} from '../../../Components/ContainerWrapper';
-import {ArtistsGrid} from '../../../Components/ArtistsGrid';
+import {ArtistsGrid} from '../../../Components/artistsGrid/ArtistsGrid';
+import {S} from './Artisits_Styles';
 
-export const Artists = () => {
+export const Artists: React.FC = () => {
     return (
         <ContainerWrapper>
-            <StyledArtists>
-                <ArtistsTitleBlock justify={'space-between'}
+            <S.Artists>
+                <S.ArtistsTitleBlock justify={'space-between'}
                                    align={'center'}
                                    wrap={'wrap'}>
                     <SectionTitle>
@@ -20,23 +19,8 @@ export const Artists = () => {
                             className={'see'} active>See All</Button>
 
                     <ArtistsGrid/>
-                </ArtistsTitleBlock>
-            </StyledArtists>
+                </S.ArtistsTitleBlock>
+            </S.Artists>
         </ContainerWrapper>
     );
 };
-
-const StyledArtists = styled.section`
-  margin: 0 auto;
-  padding: 11rem 0;
-`
-
-const ArtistsTitleBlock = styled(FlexWrapper)`
-  ${SectionTitle} {
-    margin-left: 3.2rem;
-    width: 32rem;
-  }
-  ${Button} {
-    margin-right: 3.2rem;
-  }
-`

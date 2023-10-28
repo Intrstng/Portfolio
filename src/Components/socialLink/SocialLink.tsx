@@ -9,7 +9,7 @@ type SocialLinkPropsType = {
     icon: 'facebook' | 'telegram' | 'twitter' | 'instagram' | 'facebookActive' | 'telegramActive' | 'twitterActive' | 'instagramActive'
 }
 
-export const SocialLink = (props: SocialLinkPropsType) => {
+export const SocialLink: React.FC<SocialLinkPropsType> = (props: SocialLinkPropsType) => {
     return (
         <Link href={props.link} target={'_blank'} >
             <Icon iconId={props.icon}

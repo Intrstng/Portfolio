@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import {myTheme} from "../styles/Theme.styled";
+import styled from 'styled-components';
+import {myTheme} from '../styles/Theme.styled';
 
 export const SectionTitle = styled.h2 `
   width: 50.6rem;

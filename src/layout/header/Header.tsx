@@ -1,31 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Logo} from '../../Components/logo/Logo';
 import {Menu} from '../../Components/menu/menu';
 import {Button} from '../../Components/button/Button';
-import iconsSprite from '../../assets/images/icons-sprite.svg';
 import {ContainerWrapper} from '../../Components/ContainerWrapper';
-import {Link} from "../../Components/link/Link.styled";
-import {FlexWrapper} from "../../Components/FlexWrapper";
+import {Link} from '../../Components/link/Link.styled';
+import {S} from './Header_Styles';
+import {I} from '../../Components/Images';
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
         <header>
             <ContainerWrapper>
-                <StyledHeader justify={'space-between'}
+                <S.HeaderContent justify={'space-between'}
                                align={'center'}>
-                    <Logo sprite={iconsSprite}/>
+                    <Logo sprite={I.iconsSprite}/>
                     <Menu/>
                     <Button as={Link} href={'#'} target={'_blank'}
                             className={'contact'}
                             btnType={'primary'} active>Contact</Button>
-                </StyledHeader>
+                </S.HeaderContent>
             </ContainerWrapper>
         </header>
     )
 };
-
-const StyledHeader = styled(FlexWrapper)`
-  padding: 1.6rem 0 0;
-  height: 9rem;
-`

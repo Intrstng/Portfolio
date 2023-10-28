@@ -1,49 +1,20 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Link} from '../link/Link.styled';
-import {myTheme} from '../../styles/Theme.styled';
 import {LinksListPropsType} from '../LinksData';
+import {S} from './LinksList_Styles';
 
-export const LinksList = (props: LinksListPropsType) => {
+export const LinksList: React.FC<LinksListPropsType> = (props: LinksListPropsType) => {
     return (
-        <LinksBlock>
+        <S.LinksBlock>
             <h5>{props.title}</h5>
             <ul>
-                {props.links.map(link => ( <Link href={link.to}
-                                                target={'_blank'}>
-                                                {link.name}
-                                           </Link> )
+                {props.links.map((link, idx )=> ( <Link href={link.to}
+                                                                             target={'_blank'}
+                                                                             key={idx}>
+                                                                                {link.name}
+                                                                        </Link> )
                 )}
             </ul>
-        </LinksBlock>
+        </S.LinksBlock>
     );
 };
-
-const LinksBlock = styled.div `
-  h5 {
-    margin-bottom: 2.6rem;
-    font-family: Inter, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 120%;
-    color: ${myTheme.colors.light};
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.8rem;
-    a {
-      font-family: Inter, sans-serif;
-      font-size: 1.6rem;
-      font-weight: normal;
-      line-height: 160%;
-      color: ${myTheme.colors.primary};
-      transition: 0.3s color ease-in-out;
-      &:hover {
-        color: ${myTheme.colors.secondary};
-      }
-    }
-  }
-`

@@ -1,20 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
-import {FlexWrapper} from '../../../Components/FlexWrapper';
 import {SectionTitle} from '../../../Components/SectionTitle';
 import {Card} from '../../../Components/card/Card';
-import cardImg_1 from '../../../assets/images/card_1.png';
-import cardImg_2 from '../../../assets/images/card_2.png';
-import cardImg_3 from '../../../assets/images/card_3.png';
 import {Button} from '../../../Components/button/Button';
 import {Link} from '../../../Components/link/Link.styled';
 import {ContainerWrapper} from '../../../Components/ContainerWrapper';
+import {S} from './Collections_Styles';
+import {I} from '../../../Components/Images';
 
-export const Collections = () => {
+export const Collections: React.FC = () => {
   return (
     <section>
       <ContainerWrapper>
-        <CollectionsTitleBlock justify={'space-between'}
+        <S.CollectionsTitleBlock justify={'space-between'}
                                align={'flex-end'}
                                wrap={'wrap'}>
           <SectionTitle>
@@ -25,35 +22,26 @@ export const Collections = () => {
                   btnType={'primary'}
                   className={'see'} active>See All</Button>
 
-          <CardWrapper justify={'space-between'}
+          <S.CardWrapper justify={'space-between'}
                        align={'flex-start'}>
-            <Card source={cardImg_1}
+            <Card source={I.cardImg_1}
                   title={'Cyberpunk Cocomo'}
                   price={490}
                   time={'03:24:56'}
                   btnClassName={'placeBid_1'}/>
-            <Card source={cardImg_2}
+            <Card source={I.cardImg_2}
                   title={'Charge, Qi tiao yu'}
                   price={490}
                   time={'03:24:56'}
                   btnClassName={'placeBid_2'}/>
-            <Card source={cardImg_3}
+            <Card source={I.cardImg_3}
                   title={'Surgeon, Josh Rife'}
                   price={490}
                   time={'03:24:56'}
                   btnClassName={'placeBid_3'}/>
-          </CardWrapper>
-        </CollectionsTitleBlock>
+          </S.CardWrapper>
+        </S.CollectionsTitleBlock>
       </ContainerWrapper>
     </section>
   );
 };
-
-const CollectionsTitleBlock = styled(FlexWrapper)`
-  margin: 0 auto;
-  padding: 10.5rem 0;
-  gap: 6rem;
-`
-const CardWrapper = styled(FlexWrapper)`
-  width: 100%;
-`
