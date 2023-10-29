@@ -4,7 +4,7 @@ import {Container} from '../../Components/Container';
 import {SocialLink} from '../../Components/socialLink/SocialLink';
 import {LinksList} from '../../Components/linksList/LinksList';
 import {navStatistic, navResources, navCompany, navExplore} from '../../Components/LinksData';
-import {Copyright} from "../../Components/copyright/Copyright";
+import {Copyright} from '../../Components/copyright/Copyright';
 import {S} from './Footer_Styles';
 import {I} from '../../Components/Images';
 

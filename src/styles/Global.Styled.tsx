@@ -11,6 +11,7 @@ export const GlobalStyled = createGlobalStyle `
   }
   html {
     font-size: 10px;
+    scroll-behavior: smooth;
   }
   body {
     min-width: 375px;
