@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlexWrapper} from '../../../Components/FlexWrapper';
 import {Button} from '../../../Components/button/Button';
-import {ContainerWrapper} from '../../../Components/ContainerWrapper';
+import {Container} from '../../../Components/Container';
 import {BidCard} from '../../../Components/card/BidCard';
 import {Link} from '../../../Components/link/Link.styled';
 import {Counter} from '../../../Components/counter/Counter';
@@ -17,9 +17,9 @@ type ExplorePropsType = {
 
 export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => {
     return (
-        <section>
-            <ContainerWrapper>
-                <S.Explore justify={'space-between'}
+        <S.Explore>
+            <Container>
+                <S.ExploreWrapper justify={'space-between'}
                            align={'flex-start'}
                            wrap={'wrap'}>
                     <S.ExploreDescription>
@@ -51,8 +51,8 @@ export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => 
                     </S.ExploreImageBlock>
 
                     <Counter/>
-                </S.Explore>
-            </ContainerWrapper>
-        </section>
+                </S.ExploreWrapper>
+            </Container>
+        </S.Explore>
     );
 };

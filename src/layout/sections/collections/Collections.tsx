@@ -3,17 +3,17 @@ import {SectionTitle} from '../../../Components/SectionTitle';
 import {Card} from '../../../Components/card/Card';
 import {Button} from '../../../Components/button/Button';
 import {Link} from '../../../Components/link/Link.styled';
-import {ContainerWrapper} from '../../../Components/ContainerWrapper';
+import {Container} from '../../../Components/Container';
 import {S} from './Collections_Styles';
 import {I} from '../../../Components/Images';
 
 export const Collections: React.FC = () => {
   return (
-    <section>
-      <ContainerWrapper>
-        <S.CollectionsTitleBlock justify={'space-between'}
-                               align={'flex-end'}
-                               wrap={'wrap'}>
+    <S.Collections>
+      <Container>
+        <S.CollectionsWrapper justify={'space-between'}
+                              align={'flex-end'}
+                              wrap={'wrap'}>
           <SectionTitle>
             <span>Amazing</span> and Super
             Unique Art of This <span>Week</span>
@@ -23,7 +23,7 @@ export const Collections: React.FC = () => {
                   className={'see'} active>See All</Button>
 
           <S.CardWrapper justify={'space-between'}
-                       align={'flex-start'}>
+                         align={'flex-start'}>
             <Card source={I.cardImg_1}
                   title={'Cyberpunk Cocomo'}
                   price={490}
@@ -40,8 +40,8 @@ export const Collections: React.FC = () => {
                   time={'03:24:56'}
                   btnClassName={'placeBid_3'}/>
           </S.CardWrapper>
-        </S.CollectionsTitleBlock>
-      </ContainerWrapper>
-    </section>
+        </S.CollectionsWrapper>
+      </Container>
+    </S.Collections>
   );
 };
