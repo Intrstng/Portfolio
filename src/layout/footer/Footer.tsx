@@ -14,12 +14,12 @@ export const Footer: React.FC = () => {
       <Container>
         <S.LinksContainer>
           <S.Social>
-            <LogoFooter sprite={I.iconsSprite}/>
+            <LogoFooter/>
             <p>Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!</p>
             <S.IconsBlock>
               <SocialLink link={'https://ru-ru.facebook.com/'}
                           sprite={I.iconsSprite}
-                          icon={'facebookActive'}/>
+                          icon={'facebook'}/>
               <SocialLink link={'https://web.telegram.org/k/'}
                           sprite={I.iconsSprite}
                           icon={'telegram'}/>

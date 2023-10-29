@@ -6,7 +6,7 @@ type SocialLinkPropsType = {
     link: string
     sprite: string
     // active?: boolean
-    icon: 'facebook' | 'telegram' | 'twitter' | 'instagram' | 'facebookActive' | 'telegramActive' | 'twitterActive' | 'instagramActive'
+    icon: 'facebook' | 'telegram' | 'twitter' | 'instagram'
 }
 
 export const SocialLink: React.FC<SocialLinkPropsType> = (props: SocialLinkPropsType) => {
