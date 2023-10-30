@@ -10,9 +10,10 @@ export const myTheme = {
     bgroundLight: '#D3D3D3',
     bgroundInput: 'rgba(144,144,144,0.5)',
     font: '#838382',
-
-  // media: {
-  //   tablet: 'screen and (max-width: 768px) and (min-width: 577px)',
-  //   mobile: 'screen and (max-width: 576px)'
+  },
+  media: {
+    desktopSmall: 'screen and (max-width: 1200px)',
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 576px)'
   }
 }
