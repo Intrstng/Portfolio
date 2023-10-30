@@ -7,7 +7,7 @@ import {S} from './Artisits_Styles';
 
 export const Artists: React.FC = () => {
   return (
-    <S.Artists>
+    <S.Artists id={'artists'}>
       <Container>
         <S.ArtistsWrapper justify={'space-between'}
                           align={'center'}

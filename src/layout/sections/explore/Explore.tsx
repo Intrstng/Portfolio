@@ -17,18 +17,16 @@ type ExplorePropsType = {
 
 export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => {
     return (
-        <S.Explore>
+        <S.Explore id={'explore'}>
             <Container>
                 <S.ExploreWrapper justify={'space-between'}
-                           align={'flex-start'}
-                           wrap={'wrap'}>
+                                  align={'flex-start'}
+                                  wrap={'wrap'}>
                     <S.ExploreDescription>
                         <h2>Discover and Collect The Best NFTs <span>Digital Art.</span></h2>
                         <StyledText>Get started with the easiest and most secure platform to buy and trade digital ART
-                            and
-                            NFT’s. Start exploring the world of digital art and NFTs today and take control of your
-                            digital
-                            assets with confidence!</StyledText>
+                            and NFT’s. Start exploring the world of digital art and NFTs today and take control of your
+                            digital assets with confidence!</StyledText>
 
                         <FlexWrapper>
                             <Button as={Link} href={'#'} target={'_blank'}

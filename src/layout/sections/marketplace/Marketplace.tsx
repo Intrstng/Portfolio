@@ -8,7 +8,7 @@ import {I} from '../../../Components/Images';
 
 export const Marketplace: React.FC = () => {
   return (
-    <S.Marketplace>
+    <S.Marketplace id={'marketplace'}>
       <Container>
         <FlexWrapper justify={'space-between'}
                      align={'center'}>

@@ -8,7 +8,7 @@ import {I} from '../../../Components/Images';
 
 export const Subscribe: React.FC = () => {
   return (
-    <S.Subscribe>
+    <S.Subscribe id={'subscribe'}>
       <Container>
         <FlexWrapper justify={'space-between'}
                      align={'center'}>

@@ -1,117 +1,147 @@
 // Header navigation
+import {I} from './Images';
+
 type LinksObjectType = {
-  to: string
-  name: string
+    to: string
+    name: string
 }
 
 export type HeaderListPropsType = {
-  links: LinksObjectType[]
+    links: LinksObjectType[]
 }
 
 export const navHeaderMenu: HeaderListPropsType = {
-  links: [
-    {
-      to: '#marketplace',
-      name: 'Marketplace'
-    },
-    {
-      to: '#artists',
-      name: 'Artists'
-    },
-    {
-      to: '#community',
-      name: 'Community'
-    },
-    {
-      to: '#collections',
-      name: 'Collections'
-    },
-  ]
+    links: [
+        {
+            to: '#marketplace',
+            name: 'Marketplace'
+        },
+        {
+            to: '#artists',
+            name: 'Artists'
+        },
+        {
+            to: '#subscribe',
+            name: 'Community'
+        },
+        {
+            to: '#collections',
+            name: 'Collections'
+        },
+    ]
 }
+
+// Footer social links
+export type SocialLinkDataType = {
+  link: string
+  sprite: string
+  icon: 'facebook' | 'telegram' | 'twitter' | 'instagram'
+}
+
+export const socialLinkData: SocialLinkDataType[] = [
+  {
+    link: 'https://ru-ru.facebook.com/',
+    sprite: I.iconsSprite,
+    icon: 'facebook'
+  },
+  {
+    link: 'https://web.telegram.org/k/',
+    sprite: I.iconsSprite,
+    icon: 'telegram'
+  },
+  {
+    link: 'https://twitter.com/?lang=ru',
+    sprite: I.iconsSprite,
+    icon: 'twitter'
+  },
+  {
+    link: 'https://www.instagram.com/',
+    sprite: I.iconsSprite,
+    icon: 'instagram'
+  }
+]
 
 // Footer navigation
 
 export type LinksListPropsType = {
-  title: string
-  links: LinksObjectType[]
+    title: string
+    links: LinksObjectType[]
 }
 
-export const navExplore: LinksListPropsType = {
-  title: 'Explore',
-  links: [
+export const navigationFooterData: LinksListPropsType[] = [
     {
-      to: 'https://www.google.com/',
-      name: 'Art Sign In'
+        title: 'Explore',
+        links: [
+            {
+                to: 'https://www.somelink.com/',
+                name: 'Art Sign In'
+            },
+            {
+                to: 'https://www.smashthewalls.com/',
+                name: 'Collectibles'
+            },
+            {
+                to: 'https://www.cbsnews.com/',
+                name: 'Domain Name'
+            },
+            {
+                to: 'https://www.seattletimes.com/',
+                name: 'Utility'
+            },
+        ]
     },
     {
-      to: 'https://www.google.com/',
-      name: 'Collectibles'
+        title: 'Statistic',
+        links: [
+            {
+                to: 'https://www.somelink.com/tech/',
+                name: 'Ranking'
+            },
+            {
+                to: 'https://www.columbia.edu/',
+                name: 'Collectibles'
+            },
+            {
+                to: 'https://www.state.gov/',
+                name: 'Activity'
+            },
+        ]
     },
     {
-      to: 'https://www.google.com/',
-      name: 'Domain Name'
+        title: 'Company',
+        links: [
+            {
+                to: 'https://www.somelink.com/finance/',
+                name: 'About Us'
+            },
+            {
+                to: 'https://www.nbcnews.com/',
+                name: 'Career'
+            },
+            {
+                to: 'https://www.spiegel.de/',
+                name: 'Support'
+            },
+            {
+                to: 'https://www.discovery.com/',
+                name: 'Partners'
+            },
+        ]
     },
     {
-      to: 'https://www.google.com/',
-      name: 'Utility'
-    },
-  ]
-};
-
-export const navStatistic: LinksListPropsType = {
-  title: 'Statistic',
-  links: [
-    {
-      to: 'https://www.google.com/',
-      name: 'Ranking'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Collectibles'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Activity'
-    },
-  ]
-};
-
-export const navCompany: LinksListPropsType = {
-  title: 'Company',
-  links: [
-    {
-      to: 'https://www.google.com/',
-      name: 'About Us'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Career'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Support'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Partners'
-    },
-  ]
-};
-
-export const navResources: LinksListPropsType = {
-  title: 'Resources',
-  links: [
-    {
-      to: 'https://www.google.com/',
-      name: 'Help Center'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Platform Status'
-    },
-    {
-      to: 'https://www.google.com/',
-      name: 'Blog'
-    },
-  ]
-};
+        title: 'Resources',
+        links: [
+            {
+                to: 'https://www.somelink.com/travel/',
+                name: 'Help Center'
+            },
+            {
+                to: 'https://www.forbes.com/',
+                name: 'Platform Status'
+            },
+            {
+                to: 'https://www.transportation.gov/',
+                name: 'Blog'
+            },
+        ]
+    }];

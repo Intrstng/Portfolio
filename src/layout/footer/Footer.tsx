@@ -3,10 +3,9 @@ import {LogoFooter} from '../../Components/logo/Logo';
 import {Container} from '../../Components/Container';
 import {SocialLink} from '../../Components/socialLink/SocialLink';
 import {LinksList} from '../../Components/linksList/LinksList';
-import {navStatistic, navResources, navCompany, navExplore} from '../../Components/LinksData';
+import {LinksListPropsType, navigationFooterData, socialLinkData, SocialLinkDataType} from '../../Components/LinksData';
 import {Copyright} from '../../Components/copyright/Copyright';
 import {S} from './Footer_Styles';
-import {I} from '../../Components/Images';
 
 export const Footer: React.FC = () => {
   return (
@@ -17,33 +16,21 @@ export const Footer: React.FC = () => {
             <LogoFooter/>
             <p>Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!</p>
             <S.IconsBlock>
-              <SocialLink link={'https://ru-ru.facebook.com/'}
-                          sprite={I.iconsSprite}
-                          icon={'facebook'}/>
-              <SocialLink link={'https://web.telegram.org/k/'}
-                          sprite={I.iconsSprite}
-                          icon={'telegram'}/>
-              <SocialLink link={'https://twitter.com/?lang=ru'}
-                          sprite={I.iconsSprite}
-                          icon={'twitter'}/>
-              <SocialLink link={'https://www.instagram.com/'}
-                          sprite={I.iconsSprite}
-                          icon={'instagram'}/>
+              {socialLinkData.map((item: SocialLinkDataType, idx: number) => ( <SocialLink link={item.link}
+                                                                                           sprite={item.sprite}
+                                                                                           icon={item.icon}
+                                                                                           key={idx}/>
+                  )
+              )}
             </S.IconsBlock>
           </S.Social>
 
           <S.FooterMenu>
-            <LinksList title={navExplore.title}
-                       links={navExplore.links}/>
-
-            <LinksList title={navStatistic.title}
-                       links={navStatistic.links}/>
-
-            <LinksList title={navCompany.title}
-                       links={navCompany.links}/>
-
-            <LinksList title={navResources.title}
-                       links={navResources.links}/>
+            {navigationFooterData.map((nav: LinksListPropsType, idx: number) => ( <LinksList title={nav.title}
+                                                                                             links={nav.links}
+                                                                                             key={idx}/>
+                )
+            )}
           </S.FooterMenu>
         </S.LinksContainer>
         <Copyright/>
