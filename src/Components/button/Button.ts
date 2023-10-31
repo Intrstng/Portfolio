@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonPropsType>`
   transition: 0.3s transform ease,
               0.3s color ease;
   cursor: pointer;
-  ${font({family: "Inter, sans-serif",
+  ${font({family: 'Inter, sans-serif',
                 weight: 'bold',
                 Fmax: 1.6,
                 Fmin: 1.6,

@@ -12,7 +12,7 @@ export const myTheme = {
     font: '#838382',
   },
   media: {
-    desktopSmall: 'screen and (max-width: 1200px)',
+    desktopSmall: 'screen and (max-width: 992px)',
     tablet: 'screen and (max-width: 768px)',
     mobile: 'screen and (max-width: 576px)'
   }

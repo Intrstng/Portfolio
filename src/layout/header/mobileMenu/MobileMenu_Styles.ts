@@ -20,8 +20,8 @@ const BurgerButton = styled.button<{isOpen: boolean}> `
     background-color: ${myTheme.colors.light};
     border-radius: 0.1rem;
     position: absolute;
-                                                left: 4rem;
-                                                bottom: 5rem;
+    left: 6rem;
+    bottom: 4.8rem;
     ${props => props.isOpen && css<{isOpen: boolean}>`
       background-color: transparent;
     `}
@@ -33,7 +33,7 @@ const BurgerButton = styled.button<{isOpen: boolean}> `
       background-color: ${myTheme.colors.light};
       border-radius: 0.1rem;
       position: absolute;
-      transform: translateY(-0.6rem);
+      transform: translateY(-0.8rem);
         ${props => props.isOpen && css<{isOpen: boolean}>`
           transform: rotate(-45deg) translateY(0);
       `}
@@ -46,7 +46,7 @@ const BurgerButton = styled.button<{isOpen: boolean}> `
       background-color: ${myTheme.colors.light};
       border-radius: 0.1rem;
       position: absolute;
-      transform: translateY(0.6rem);
+      transform: translateY(0.8rem);
       ${props => props.isOpen && css<{isOpen: boolean}>`
         transform: rotate(45deg) translateY(0);
       `}
