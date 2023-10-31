@@ -15,7 +15,6 @@ export const Header: React.FC = () => {
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener('resize', handleWindowResize);
-
         // Remove the event listener
         return () => window.removeEventListener('resize', handleWindowResize);
     }, []);

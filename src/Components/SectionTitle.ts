@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 import {myTheme} from '../styles/Theme.styled';
+import {font} from '../styles/Common';
 
-export const SectionTitle = styled.h2 `
-  width: 50.6rem;
-  color: ${myTheme.colors.primary};
-  font-family: Canela, sans-serif;
-  font-size: 4.8rem;
-  font-weight: 500;
-  line-height: 120%;
-  span {
-    color: ${myTheme.colors.secondary};
-  }
+export const SectionTitle = styled.h2`
+    max-width: 50.6rem;
+    width: 100%;
+    ${font({family: 'Canela, sans-serif',
+                weight: 500,
+                Fmax: 4.3,
+                Fmin: 2.9,
+                lineHeight: 1.2,
+                color: myTheme.colors.primary
+              })
+    };
+    span {
+        color: ${myTheme.colors.secondary};
+    }
 `

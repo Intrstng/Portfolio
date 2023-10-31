@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import {myTheme} from '../../styles/Theme.styled';
+import {font} from '../../styles/Common';
 
 type ButtonPropsType = {
     btnType?: 'primary' | 'outlined'
@@ -9,13 +10,17 @@ type ButtonPropsType = {
 export const Button = styled.button<ButtonPropsType>`
   padding: 1.4rem 4rem;
   border-radius: 0.8rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 120%;
   white-space: nowrap;
-  transition: 0.3s transform ease-in-out,
-              0.3s color ease-in-out;
+  transition: 0.3s transform ease,
+              0.3s color ease;
   cursor: pointer;
+  ${font({family: "Inter, sans-serif",
+                weight: 'bold',
+                Fmax: 1.6,
+                Fmin: 1.6,
+                lineHeight: 1.2
+              })
+  };
   &:hover {
     transform: scale(1.03);
   }

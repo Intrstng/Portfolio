@@ -14,13 +14,22 @@ export const GlobalStyled = createGlobalStyle `
     scroll-behavior: smooth;
   }
   body {
+    margin: 0;
     min-width: 375px;
     background-color: ${myTheme.colors.dark};
     color: ${myTheme.colors.primary};
-    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
     line-height: 120%;
     box-sizing: border-box;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
   }
 `
