@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
             )}
           </S.FooterMenu>
         </S.LinksContainer>
-        {/*<Copyright/>*/}
+        <Copyright/>
       </Container>
     </S.Footer>
   );
