@@ -11,7 +11,8 @@ export const Footer: React.FC = () => {
   return (
     <S.Footer>
       <Container>
-        <S.LinksContainer>
+        <S.LinksContainer justify={'space-between'}
+                          align={'flex-start'}>
           <S.Social>
             <LogoFooter/>
             <p>Discover NFTs by category, track the latest drop, and and follow the collections you love. Enjoy it!</p>
@@ -33,7 +34,7 @@ export const Footer: React.FC = () => {
             )}
           </S.FooterMenu>
         </S.LinksContainer>
-        <Copyright/>
+        {/*<Copyright/>*/}
       </Container>
     </S.Footer>
   );

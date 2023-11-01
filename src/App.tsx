@@ -18,7 +18,7 @@ function App() {
             <Marketplace/>
             <Artists/>
             <Subscribe/>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
