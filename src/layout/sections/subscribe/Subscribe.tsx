@@ -10,8 +10,8 @@ export const Subscribe: React.FC = () => {
   return (
     <S.Subscribe id={'subscribe'}>
       <Container>
-        <FlexWrapper justify={'space-between'}
-                     align={'center'}>
+        <S.SubscribeWrapper justify={'space-between'}
+                            align={'center'}>
 
           <S.SubscribeImageBlock>
             <Image src={I.subscribeImg_1}
@@ -34,7 +34,7 @@ export const Subscribe: React.FC = () => {
 
             <Form/>
           </S.SubscribeDescription>
-        </FlexWrapper>
+        </S.SubscribeWrapper>
       </Container>
     </S.Subscribe>
   );
