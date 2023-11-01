@@ -18,16 +18,16 @@ export const Card: React.FC<CardPropsType> = (props: CardPropsType) => {
             <CardImage src={props.source} alt='card image'/>
 
                 <S.CardDescription justify={'space-between'}
-                                 align={'flex-start'}>
+                                   align={'flex-start'}>
                     <h4>{props.title}</h4>
                     <h5>{props.price}ETH</h5>
                 </S.CardDescription>
 
                 <S.CardBidBlock justify={'space-between'}
-                              align={'flex-start'}>
+                                align={'flex-start'}>
                         <S.CardBidCounter direction={'column'}
-                                        justify={'flex-start'}
-                                        align={'flex-start'}>
+                                          justify={'flex-start'}
+                                          align={'flex-start'}>
                             <p>Ending In</p>
                             <h5>{props.time}</h5>
                         </S.CardBidCounter>

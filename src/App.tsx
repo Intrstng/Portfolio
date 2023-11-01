@@ -13,10 +13,10 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            {/*<Explore sprite={iconsSprite}/>*/}
-            {/*<Collections/>*/}
-            {/*<Marketplace/>*/}
-            {/*<Artists/>*/}
+            <Explore sprite={iconsSprite}/>
+            <Collections/>
+            <Marketplace/>
+            <Artists/>
             {/*<Subscribe/>*/}
             {/*<Footer/>*/}
         </div>

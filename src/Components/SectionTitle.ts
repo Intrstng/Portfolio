@@ -16,4 +16,11 @@ export const SectionTitle = styled.h2`
     span {
         color: ${myTheme.colors.secondary};
     }
+    @media ${myTheme.media.desktopSmall} {
+      max-width: 34rem;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      line-height: 1.3;
+    }
 `

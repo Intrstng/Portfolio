@@ -54,8 +54,9 @@ export const Collections: React.FC = () => {
                   btnType={'primary'}
                   className={'see'} active>See All</Button>
 
-          <S.CardWrapper justify={'space-between'}
-                         align={'flex-start'}>
+          <S.CardWrapper justify={'center'}
+                         align={'flex-start'}
+                         wrap={'wrap'}>
 
             {cardData.map((card: CardObjectType, idx: number) => ( <Card source={card.src}
                                                                       title={card.title}

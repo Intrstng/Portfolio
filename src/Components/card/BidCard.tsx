@@ -5,9 +5,9 @@ import {S} from './BidCard_Styles';
 export const BidCard: React.FC = () => {
     return (
         <S.BidCard direction={'column'}
-                       align={'center'}>
+                   align={'center'}>
             <S.BidBlock justify={'space-between'}
-                            align={'flex-start'}>
+                        align={'flex-start'}>
                 <div>
                     <h4>Ends in</h4>
                     <p>05:45:47</p>

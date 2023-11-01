@@ -28,14 +28,14 @@ export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => 
                             and NFT’s. Start exploring the world of digital art and NFTs today and take control of your
                             digital assets with confidence!</StyledText>
 
-                        <FlexWrapper>
+                        <S.ButtonWrapper>
                             <Button as={Link} href={'#'} target={'_blank'}
                                     className={'explore'}
                                     btnType={'primary'} active>Explore Now</Button>
                             <Button as={Link} href={'#'} target={'_blank'}
                                     className={'learn'}
                                     btnType={'primary'}>Learn More</Button>
-                        </FlexWrapper>
+                        </S.ButtonWrapper>
                     </S.ExploreDescription>
 
                     <S.ExploreImageBlock>
@@ -46,6 +46,11 @@ export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => 
                               height={'172'}
                               viewBox={'0 0 172 172'}
                               source={props.sprite}/>
+                        {/*<Icon iconId={'starSmall'}*/}
+                        {/*      width={'172'}*/}
+                        {/*      height={'172'}*/}
+                        {/*      viewBox={'0 0 172 172'}*/}
+                        {/*      source={props.sprite}/>*/}
                     </S.ExploreImageBlock>
 
                     <Counter/>

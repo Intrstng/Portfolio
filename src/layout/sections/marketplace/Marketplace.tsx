@@ -10,7 +10,7 @@ export const Marketplace: React.FC = () => {
   return (
     <S.Marketplace id={'marketplace'}>
       <Container>
-        <FlexWrapper justify={'space-between'}
+        <S.MarketplaceWrapper justify={'space-between'}
                      align={'center'}>
 
           <S.MarketplaceDescription direction={'column'}
@@ -25,19 +25,19 @@ export const Marketplace: React.FC = () => {
               assets with confidence!
             </S.MarketplaceText>
 
-            <FlexWrapper>
+            <S.ButtonWrapper>
               <Button btnType={'primary'}
                       className={'create'} active>Create Now</Button>
               <Button btnType={'primary'}
                       className={'learn'}>Learn More</Button>
-            </FlexWrapper>
+            </S.ButtonWrapper>
           </S.MarketplaceDescription>
 
           <MarketplaceImageBlock>
             <Image src={I.createImg_1} alt='nft'/>
             <Image src={I.createImg_2} alt='nft'/>
           </MarketplaceImageBlock>
-        </FlexWrapper>
+        </S.MarketplaceWrapper>
       </Container>
     </S.Marketplace>
   );

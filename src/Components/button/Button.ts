@@ -28,6 +28,7 @@ export const Button = styled.button<ButtonPropsType>`
     background: transparent;
     color: ${myTheme.colors.primary};
     border: none;
+    padding: 1.4rem 0;
     &:hover {
       background: ${myTheme.colors.secondary};
       color: ${myTheme.colors.dark};
@@ -51,5 +52,6 @@ export const Button = styled.button<ButtonPropsType>`
       background: ${myTheme.colors.secondary};
       color: ${myTheme.colors.dark};
       border: none;
+      padding: 1.4rem 4rem;
   `};
 `;
