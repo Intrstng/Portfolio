@@ -1,5 +1,4 @@
 import React from 'react';
-import {FlexWrapper} from '../../../Components/FlexWrapper';
 import {Form} from '../../../Components/form/Form';
 import {Image} from '../../../Components/image/Image';
 import {Container} from '../../../Components/Container';
