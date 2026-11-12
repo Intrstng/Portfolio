@@ -28,15 +28,16 @@ const ExploreWrapper = styled(FlexWrapper)`
 `
 
 const ButtonWrapper = styled(FlexWrapper)`
-  gap: 3.6rem;
-  @media ${myTheme.media.desktopSmall} {
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 35rem;
-  }
-  @media ${myTheme.media.mobile} {
-    justify-content: center;
-  }
+    align-items: center;
+    gap: 3.6rem;
+    @media ${myTheme.media.desktopSmall} {
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 35rem;
+    }
+    @media ${myTheme.media.mobile} {
+        justify-content: center;
+    }
 `
 
 const ExploreDescription = styled.div`

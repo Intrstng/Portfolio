@@ -18,14 +18,21 @@ const BidCard = styled(FlexWrapper)`
   box-shadow: 0 0.9rem 5rem 0 ${myTheme.colors.shadow};
   ${Button} {
     width: 100%;
+    transition: color 0.3s ease,
+                background 0.3s ease;
+    transform: unset;
+      
     ${font({family: 'Inter, sans-serif',
                   weight: 'bold',
                   Fmax: 1.6,
                   Fmin: 1.6,
                   lineHeight: 1.2,
-                  //color: myTheme.colors.secondary
+                  color: myTheme.colors.secondary,
                 })
     };
+      &:hover {
+          color: ${myTheme.colors.dark};
+      }
   }
   @media ${myTheme.media.desktopSmall} {
     max-width: 25rem;

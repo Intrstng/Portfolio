@@ -3,6 +3,7 @@ import {Button} from '../../../Components/button/Button';
 import {Container} from '../../../Components/Container';
 import {BidCard} from '../../../Components/card/BidCard';
 import {Link} from '../../../Components/link/Link.styled';
+import {LearnLink} from '../../../Components/learnLink/LearnLink.styled';
 import {Counter} from '../../../Components/counter/Counter';
 import {Icon} from '../../../Components/icon/Icon';
 import {Image} from '../../../Components/image/Image';
@@ -31,7 +32,7 @@ export const Explore: React.FC<ExplorePropsType> = (props: ExplorePropsType) => 
                             <Button as={Link} href={'#'} target={'_blank'}
                                     className={'explore'}
                                     btnType={'primary'} active>Explore Now</Button>
-                            <Button as={Link} href={'#'} target={'_blank'}
+                            <Button as={LearnLink} href={'#'} target={'_blank'}
                                     className={'learn'}
                                     btnType={'primary'}>Learn More</Button>
                         </S.ButtonWrapper>

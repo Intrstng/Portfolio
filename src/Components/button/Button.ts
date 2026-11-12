@@ -45,7 +45,6 @@ export const Button = styled.button<ButtonPropsType>`
     &:hover {
       background: ${myTheme.colors.secondary};
       color: ${myTheme.colors.dark};
-      border: none;
     }
   `};
   ${props => props.btnType === 'primary' && props.active && css<ButtonPropsType> `

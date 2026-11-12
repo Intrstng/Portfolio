@@ -1,8 +1,9 @@
 import React from 'react';
 import {Button} from '../../../Components/button/Button';
+import {LearnLink} from '../../../Components/learnLink/LearnLink.styled';
 import {Image} from '../../../Components/image/Image';
 import {Container} from '../../../Components/Container';
-import {S, MarketplaceImageBlock} from './Marketplace_Styles';
+import {MarketplaceImageBlock, S} from './Marketplace_Styles';
 import {I} from '../../../Components/Images';
 
 export const Marketplace: React.FC = () => {
@@ -27,8 +28,9 @@ export const Marketplace: React.FC = () => {
             <S.ButtonWrapper>
               <Button btnType={'primary'}
                       className={'create'} active>Create Now</Button>
-              <Button btnType={'primary'}
-                      className={'learn'}>Learn More</Button>
+              <Button as={LearnLink} href={'#'} target={'_blank'}
+                      className={'learn'}
+                      btnType={'primary'}>Learn More</Button>
             </S.ButtonWrapper>
           </S.MarketplaceDescription>
 
