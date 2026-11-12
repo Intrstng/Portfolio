@@ -7,7 +7,7 @@ Pixel-perfect implementation based on the Figma design mockup, mobile responsive
 [Deploy](https://intrstng.github.io/Portfolio/)
 
 ## Screenshot
-<img width="800" height="450" alt="Capture" src="./assets/img/screenshot.PNG" />
+<img width="800" height="450" alt="Capture" src="./src/assets/img/screenshot.PNG" />
 
 ### Technologies
 React, Styled-components (CSS-in-JS), responsive layout, Pixel Perfect
