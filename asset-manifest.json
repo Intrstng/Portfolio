@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f97807f6.css",
-    "main.js": "/Portfolio/static/js/main.8cac8890.js",
+    "main.js": "/Portfolio/static/js/main.635719fe.js",
     "static/js/787.25eaef86.chunk.js": "/Portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/Inter-Bold.eot": "/Portfolio/static/media/Inter-Bold.0a08e37925b305ed65c0.eot",
     "static/media/owner_5.svg": "/Portfolio/static/media/owner_5.0dc02ae2a76b603f91fed4a46a081d63.svg",
@@ -46,16 +46,16 @@
     "static/media/canela_bold.otf": "/Portfolio/static/media/canela_bold.5bb3c048757dddf5b534.otf",
     "static/media/canela-Bold.woff2": "/Portfolio/static/media/canela-Bold.3d5324a6ee79491f2e26.woff2",
     "static/media/canela.woff2": "/Portfolio/static/media/canela.b05eaf17d36a47f69ce5.woff2",
-    "static/media/arrows.svg": "/Portfolio/static/media/arrows.3f162c60e1c0b4ebd300d04d64c589a5.svg",
+    "static/media/arrows.svg": "/Portfolio/static/media/arrows.85f73762c9da49718f38a34eeae979ca.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/logo.svg": "/Portfolio/static/media/logo.6706fb5180b5d434725ae49264f966eb.svg",
-    "static/media/clock.svg": "/Portfolio/static/media/clock.e7bad77299997cca8b3273c4baa1a91d.svg",
+    "static/media/clock.svg": "/Portfolio/static/media/clock.fd4e148eccc24c82b93c50f7a85aae17.svg",
     "main.f97807f6.css.map": "/Portfolio/static/css/main.f97807f6.css.map",
-    "main.8cac8890.js.map": "/Portfolio/static/js/main.8cac8890.js.map",
+    "main.635719fe.js.map": "/Portfolio/static/js/main.635719fe.js.map",
     "787.25eaef86.chunk.js.map": "/Portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f97807f6.css",
-    "static/js/main.8cac8890.js"
+    "static/js/main.635719fe.js"
   ]
 }
